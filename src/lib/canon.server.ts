@@ -58,7 +58,7 @@ class CanonSession {
     this.cookie = [...jar].map(([k, v]) => `${k}=${v}`).join("; ");
   }
 
-  private async request(url: string, init: RequestInit = {}) {
+  private async request(url: string, init: RequestInit = {}): Promise<Response> {
     const res = await fetch(url, {
       ...init,
       redirect: "manual",
@@ -72,7 +72,7 @@ class CanonSession {
     this.mergeCookies(res);
     const location = res.headers.get("location");
     if (res.status >= 300 && res.status < 400 && location) {
-      return this.request(new URL(location, url).toString(), { headers: init.headers });
+      return this.request(new URL(location, url).toString(), init.headers ? { headers: init.headers } : {});
     }
     return res;
   }
