@@ -10,33 +10,68 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ApiReferenceRouteImport } from './routes/api-reference'
+import { Route as SettingsRouteImport } from './routes/settings'
+import { Route as ApiPublicDailyReportRouteImport } from './routes/api/public/daily-report'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiReferenceRoute = ApiReferenceRouteImport.update({
+  id: '/api-reference',
+  path: '/api-reference',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SettingsRoute = SettingsRouteImport.update({
+  id: '/settings',
+  path: '/settings',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiPublicDailyReportRoute = ApiPublicDailyReportRouteImport.update({
+  id: '/api/public/daily-report',
+  path: '/api/public/daily-report',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/api-reference': typeof ApiReferenceRoute
+  '/settings': typeof SettingsRoute
+  '/api/public/daily-report': typeof ApiPublicDailyReportRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/api-reference': typeof ApiReferenceRoute
+  '/settings': typeof SettingsRoute
+  '/api/public/daily-report': typeof ApiPublicDailyReportRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/api-reference': typeof ApiReferenceRoute
+  '/settings': typeof SettingsRoute
+  '/api/public/daily-report': typeof ApiPublicDailyReportRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/api-reference' | '/settings' | '/api/public/daily-report'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/api-reference' | '/settings' | '/api/public/daily-report'
+  id:
+    | '__root__'
+    | '/'
+    | '/api-reference'
+    | '/settings'
+    | '/api/public/daily-report'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  ApiReferenceRoute: typeof ApiReferenceRoute
+  SettingsRoute: typeof SettingsRoute
+  ApiPublicDailyReportRoute: typeof ApiPublicDailyReportRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +83,35 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api-reference': {
+      id: '/api-reference'
+      path: '/api-reference'
+      fullPath: '/api-reference'
+      preLoaderRoute: typeof ApiReferenceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/settings': {
+      id: '/settings'
+      path: '/settings'
+      fullPath: '/settings'
+      preLoaderRoute: typeof SettingsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/public/daily-report': {
+      id: '/api/public/daily-report'
+      path: '/api/public/daily-report'
+      fullPath: '/api/public/daily-report'
+      preLoaderRoute: typeof ApiPublicDailyReportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  ApiReferenceRoute: ApiReferenceRoute,
+  SettingsRoute: SettingsRoute,
+  ApiPublicDailyReportRoute: ApiPublicDailyReportRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
