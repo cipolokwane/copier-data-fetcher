@@ -14,7 +14,99 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      report_runs: {
+        Row: {
+          created_at: string
+          device_count: number | null
+          duration_ms: number | null
+          error: string | null
+          id: string
+          provider: string | null
+          recipients: string[]
+          status: string
+          triggered_by: string
+        }
+        Insert: {
+          created_at?: string
+          device_count?: number | null
+          duration_ms?: number | null
+          error?: string | null
+          id?: string
+          provider?: string | null
+          recipients?: string[]
+          status?: string
+          triggered_by?: string
+        }
+        Update: {
+          created_at?: string
+          device_count?: number | null
+          duration_ms?: number | null
+          error?: string | null
+          id?: string
+          provider?: string | null
+          recipients?: string[]
+          status?: string
+          triggered_by?: string
+        }
+        Relationships: []
+      }
+      report_settings: {
+        Row: {
+          cc_emails: string[]
+          created_at: string
+          daily_enabled: boolean
+          from_email: string
+          from_name: string
+          id: number
+          send_hour_utc: number
+          send_minute_utc: number
+          smtp_host: string
+          smtp_password: string
+          smtp_port: number
+          smtp_secure: boolean
+          smtp_username: string
+          subject_prefix: string
+          to_emails: string[]
+          updated_at: string
+        }
+        Insert: {
+          cc_emails?: string[]
+          created_at?: string
+          daily_enabled?: boolean
+          from_email?: string
+          from_name?: string
+          id?: number
+          send_hour_utc?: number
+          send_minute_utc?: number
+          smtp_host?: string
+          smtp_password?: string
+          smtp_port?: number
+          smtp_secure?: boolean
+          smtp_username?: string
+          subject_prefix?: string
+          to_emails?: string[]
+          updated_at?: string
+        }
+        Update: {
+          cc_emails?: string[]
+          created_at?: string
+          daily_enabled?: boolean
+          from_email?: string
+          from_name?: string
+          id?: number
+          send_hour_utc?: number
+          send_minute_utc?: number
+          smtp_host?: string
+          smtp_password?: string
+          smtp_port?: number
+          smtp_secure?: boolean
+          smtp_username?: string
+          subject_prefix?: string
+          to_emails?: string[]
+          updated_at?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
