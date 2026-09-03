@@ -54,6 +54,7 @@ export type Database = {
         Row: {
           cc_emails: string[]
           created_at: string
+          cron_token: string
           daily_enabled: boolean
           from_email: string
           from_name: string
@@ -72,6 +73,7 @@ export type Database = {
         Insert: {
           cc_emails?: string[]
           created_at?: string
+          cron_token?: string
           daily_enabled?: boolean
           from_email?: string
           from_name?: string
@@ -90,6 +92,7 @@ export type Database = {
         Update: {
           cc_emails?: string[]
           created_at?: string
+          cron_token?: string
           daily_enabled?: boolean
           from_email?: string
           from_name?: string

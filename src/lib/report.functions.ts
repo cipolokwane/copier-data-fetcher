@@ -40,8 +40,8 @@ export const saveReportSettings = createServerFn({ method: "POST" })
   .handler(async ({ data }) => {
     const { supabaseAdmin } = await import("@/integrations/supabase/client.server");
     const { toPublicSettings } = await import("./report.server");
-    const patch: Record<string, unknown> = { ...data };
-    if (!data.smtp_password) delete patch["smtp_password"];
+    const { smtp_password, ...rest } = data;
+    const patch = smtp_password ? { ...rest, smtp_password } : rest;
 
     const { data: row, error } = await supabaseAdmin
       .from("report_settings")

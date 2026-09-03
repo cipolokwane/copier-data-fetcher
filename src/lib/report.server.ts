@@ -15,10 +15,11 @@ export type ReportSettings = {
   daily_enabled: boolean;
   send_hour_utc: number;
   send_minute_utc: number;
+  cron_token: string;
   updated_at: string;
 };
 
-export type PublicReportSettings = Omit<ReportSettings, "smtp_password"> & {
+export type PublicReportSettings = Omit<ReportSettings, "smtp_password" | "cron_token"> & {
   smtp_password_set: boolean;
 };
 
@@ -35,7 +36,8 @@ export async function loadSettings(): Promise<ReportSettings> {
 }
 
 export function toPublicSettings(s: ReportSettings): PublicReportSettings {
-  const { smtp_password, ...rest } = s;
+  const { smtp_password, cron_token, ...rest } = s;
+  void cron_token;
   return { ...rest, smtp_password_set: Boolean(smtp_password) };
 }
 
