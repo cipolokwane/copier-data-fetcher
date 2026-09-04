@@ -1,7 +1,8 @@
 /**
  * Publishes a file to a public GitHub repo via the Contents API.
- * Auth: a fine-grained PAT in GITHUB_PAT, or the Lovable GitHub connector
- * gateway (GITHUB_API_KEY + LOVABLE_API_KEY) when no PAT is configured.
+ * Auth: a fine-grained PAT in GITHUB_FINE_GRAINED_PERSONAL_ACCESS_TOKEN
+ * (or legacy GITHUB_PAT), or the Lovable GitHub connector gateway
+ * (GITHUB_API_KEY + LOVABLE_API_KEY) when no PAT is configured.
  */
 
 const OWNER = "cipolokwane";
@@ -11,7 +12,7 @@ const BRANCH = "main";
 type Mode = { url: string; headers: Record<string, string> };
 
 function mode(): Mode {
-  const pat = process.env["GITHUB_PAT"];
+  const pat = process.env["GITHUB_FINE_GRAINED_PERSONAL_ACCESS_TOKEN"] || process.env["GITHUB_PAT"];
   if (pat) {
     return {
       url: `https://api.github.com/repos/${OWNER}/${REPO}/contents`,
@@ -35,7 +36,7 @@ function mode(): Mode {
       },
     };
   }
-  throw new Error("GitHub access is not configured (missing GITHUB_PAT or GitHub connector).");
+  throw new Error("GitHub access is not configured (missing GITHUB_FINE_GRAINED_PERSONAL_ACCESS_TOKEN or GitHub connector).");
 }
 
 function toBase64(value: string): string {
