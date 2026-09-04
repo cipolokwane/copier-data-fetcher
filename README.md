@@ -1,6 +1,6 @@
 # Canon Copier Connect
 
-i want to connect to my canon emaintanance account using my credentials so i can retrieve all the copier information, this is the url  ttps://www-ec1.srv.ygles.com/ccb/Login 
+i want to connect to my canon emaintanance 
 
 This project was built with [Lovable](https://lovable.dev).
 
