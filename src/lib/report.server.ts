@@ -156,6 +156,8 @@ export async function runReport(triggeredBy: "manual" | "cron"): Promise<{
     };
 
     const { devices, distributorName, fetchedAt } = await fetchCanonDevices();
+    const { publishMeterSnapshot } = await import("./meters.server");
+    await publishMeterSnapshot(devices, fetchedAt);
     const { html, text } = buildHtml(devices, distributorName, fetchedAt);
 
     const subject = `${settings.subject_prefix} — ${devices.length} devices — ${new Date(fetchedAt).toLocaleDateString("en-ZA")}`;
