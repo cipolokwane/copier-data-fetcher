@@ -1,6 +1,6 @@
 # Canon Copier Connect
 
-i want to connect to my canon emaintanance account using my credentials so i can retrieve all the copier information, this is the url  ttps://www-ec1.srv.ygles.com/ccb/Login and my secret username is Pieter and secret password is S@msung123 make me a page with the coloumbs with all the info it can pull out or fetch
+i want to connect to my canon emaintanance account using my credentials so i can retrieve all the copier information, this is the url  ttps://www-ec1.srv.ygles.com/ccb/Login 
 
 This project was built with [Lovable](https://lovable.dev).
 
