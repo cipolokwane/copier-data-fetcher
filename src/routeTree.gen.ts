@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as ApiReferenceRouteImport } from './routes/api-reference'
 import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as ApiPublicDailyReportRouteImport } from './routes/api/public/daily-report'
+import { Route as ApiPublicPublishMetersRouteImport } from './routes/api/public/publish-meters'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -34,18 +35,25 @@ const ApiPublicDailyReportRoute = ApiPublicDailyReportRouteImport.update({
   path: '/api/public/daily-report',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ApiPublicPublishMetersRoute = ApiPublicPublishMetersRouteImport.update({
+  id: '/api/public/publish-meters',
+  path: '/api/public/publish-meters',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/api-reference': typeof ApiReferenceRoute
   '/settings': typeof SettingsRoute
   '/api/public/daily-report': typeof ApiPublicDailyReportRoute
+  '/api/public/publish-meters': typeof ApiPublicPublishMetersRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/api-reference': typeof ApiReferenceRoute
   '/settings': typeof SettingsRoute
   '/api/public/daily-report': typeof ApiPublicDailyReportRoute
+  '/api/public/publish-meters': typeof ApiPublicPublishMetersRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -53,18 +61,30 @@ export interface FileRoutesById {
   '/api-reference': typeof ApiReferenceRoute
   '/settings': typeof SettingsRoute
   '/api/public/daily-report': typeof ApiPublicDailyReportRoute
+  '/api/public/publish-meters': typeof ApiPublicPublishMetersRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/api-reference' | '/settings' | '/api/public/daily-report'
+  fullPaths:
+    | '/'
+    | '/api-reference'
+    | '/settings'
+    | '/api/public/daily-report'
+    | '/api/public/publish-meters'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/api-reference' | '/settings' | '/api/public/daily-report'
+  to:
+    | '/'
+    | '/api-reference'
+    | '/settings'
+    | '/api/public/daily-report'
+    | '/api/public/publish-meters'
   id:
     | '__root__'
     | '/'
     | '/api-reference'
     | '/settings'
     | '/api/public/daily-report'
+    | '/api/public/publish-meters'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -72,6 +92,7 @@ export interface RootRouteChildren {
   ApiReferenceRoute: typeof ApiReferenceRoute
   SettingsRoute: typeof SettingsRoute
   ApiPublicDailyReportRoute: typeof ApiPublicDailyReportRoute
+  ApiPublicPublishMetersRoute: typeof ApiPublicPublishMetersRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -104,6 +125,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ApiPublicDailyReportRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/api/public/publish-meters': {
+      id: '/api/public/publish-meters'
+      path: '/api/public/publish-meters'
+      fullPath: '/api/public/publish-meters'
+      preLoaderRoute: typeof ApiPublicPublishMetersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
@@ -112,6 +140,7 @@ const rootRouteChildren: RootRouteChildren = {
   ApiReferenceRoute: ApiReferenceRoute,
   SettingsRoute: SettingsRoute,
   ApiPublicDailyReportRoute: ApiPublicDailyReportRoute,
+  ApiPublicPublishMetersRoute: ApiPublicPublishMetersRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
