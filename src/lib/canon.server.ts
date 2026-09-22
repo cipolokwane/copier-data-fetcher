@@ -40,8 +40,9 @@ type Paged<T> = {
   resources: T[];
 };
 
-class CanonSession {
+export class CanonSession {
   private cookie = "";
+  private tokens = new Map<string, { value: string; at: number }>();
 
   private mergeCookies(res: Response) {
     const raw = res.headers.getSetCookie?.() ?? [];
@@ -92,6 +93,8 @@ class CanonSession {
   }
 
   async token(scope: string) {
+    const cached = this.tokens.get(scope);
+    if (cached && Date.now() - cached.at < 4 * 60 * 1000) return cached.value;
     const res = await this.request(`${IDENTITY}/cam/api/v1/token`, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
@@ -100,7 +103,9 @@ class CanonSession {
     if (!res.ok) {
       throw new Error(`Canon token failed [${res.status}]: ${(await res.text()).slice(0, 200)}`);
     }
-    return ((await res.json()) as { access_token: string }).access_token;
+    const value = ((await res.json()) as { access_token: string }).access_token;
+    this.tokens.set(scope, { value, at: Date.now() });
+    return value;
   }
 
   async api<T>(
@@ -235,4 +240,16 @@ export async function fetchCanonDevices(): Promise<{
     distributorName: deviceResult.rows[0]?.distributorName ?? null,
     fetchedAt: new Date().toISOString(),
   };
+}
+
+export const DISTRIBUTOR_TENANT_ID = "611CC";
+
+/** Logs in with the stored portal credentials and returns a reusable session. */
+export async function canonLogin(): Promise<CanonSession> {
+  const username = process.env["CANON_USERNAME"];
+  const password = process.env["CANON_PASSWORD"];
+  if (!username || !password) throw new Error("Canon portal credentials are not configured.");
+  const session = new CanonSession();
+  await session.login(username, password);
+  return session;
 }
