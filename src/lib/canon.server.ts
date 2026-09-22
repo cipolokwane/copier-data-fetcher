@@ -103,7 +103,9 @@ export class CanonSession {
     if (!res.ok) {
       throw new Error(`Canon token failed [${res.status}]: ${(await res.text()).slice(0, 200)}`);
     }
-    return ((await res.json()) as { access_token: string }).access_token;
+    const value = ((await res.json()) as { access_token: string }).access_token;
+    this.tokens.set(scope, { value, at: Date.now() });
+    return value;
   }
 
   async api<T>(
