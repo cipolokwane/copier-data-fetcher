@@ -1,9 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 /**
- * Fetches Canon data and overwrites data/meters.csv in GitHub.
- * Independent of email so the public snapshot updates even if mail fails.
- * Protected by the same shared secret as the daily report.
+ * Hourly job: fetches Canon data and overwrites data/meters.csv and
+ * data/device_information.csv in GitHub. Independent of email so the public
+ * snapshots update even if mail fails. Protected by the shared cron secret.
  */
 async function handle(request: Request) {
   const provided =
@@ -22,22 +22,38 @@ async function handle(request: Request) {
     });
   }
 
+  const url = new URL(request.url);
+  const only = url.searchParams.get("only");
+
   const { fetchCanonDevices } = await import("@/lib/canon.server");
   const { publishMeterSnapshot, METERS_RAW_URL } = await import("@/lib/meters.server");
+  const { publishDeviceInfoSnapshot, DEVICE_INFO_RAW_URL } = await import("@/lib/device-info.server");
 
   try {
     const { devices, fetchedAt } = await fetchCanonDevices();
-    const snapshot = await publishMeterSnapshot(devices, fetchedAt);
+    const meters = only === "device-info" ? { ok: true, skipped: true } : await publishMeterSnapshot(devices, fetchedAt);
+    const deviceInfo =
+      only === "meters" ? { ok: true, skipped: true } : await publishDeviceInfoSnapshot(devices, fetchedAt);
+    const ok = meters.ok && deviceInfo.ok;
     return Response.json(
-      { ...snapshot, devices: devices.length, fetchedAt, rawUrl: METERS_RAW_URL },
-      { status: snapshot.ok ? 200 : 500 },
+      {
+        ok,
+        meters,
+        deviceInfo,
+        devices: devices.length,
+        fetchedAt,
+        metersUrl: METERS_RAW_URL,
+        deviceInfoUrl: DEVICE_INFO_RAW_URL,
+      },
+      { status: ok ? 200 : 500 },
     );
   } catch (error) {
     return Response.json(
       {
         ok: false,
         error: error instanceof Error ? error.message : "Unknown error",
-        rawUrl: METERS_RAW_URL,
+        metersUrl: METERS_RAW_URL,
+        deviceInfoUrl: DEVICE_INFO_RAW_URL,
       },
       { status: 500 },
     );
