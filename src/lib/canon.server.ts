@@ -241,3 +241,15 @@ export async function fetchCanonDevices(): Promise<{
     fetchedAt: new Date().toISOString(),
   };
 }
+
+export const DISTRIBUTOR_TENANT_ID = "611CC";
+
+/** Logs in with the stored portal credentials and returns a reusable session. */
+export async function canonLogin(): Promise<CanonSession> {
+  const username = process.env["CANON_USERNAME"];
+  const password = process.env["CANON_PASSWORD"];
+  if (!username || !password) throw new Error("Canon portal credentials are not configured.");
+  const session = new CanonSession();
+  await session.login(username, password);
+  return session;
+}
