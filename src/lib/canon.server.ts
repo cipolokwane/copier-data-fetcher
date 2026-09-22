@@ -40,8 +40,9 @@ type Paged<T> = {
   resources: T[];
 };
 
-class CanonSession {
+export class CanonSession {
   private cookie = "";
+  private tokens = new Map<string, { value: string; at: number }>();
 
   private mergeCookies(res: Response) {
     const raw = res.headers.getSetCookie?.() ?? [];
@@ -92,6 +93,8 @@ class CanonSession {
   }
 
   async token(scope: string) {
+    const cached = this.tokens.get(scope);
+    if (cached && Date.now() - cached.at < 4 * 60 * 1000) return cached.value;
     const res = await this.request(`${IDENTITY}/cam/api/v1/token`, {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
