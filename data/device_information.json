@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-28T10:00:16.627Z",
+  "generated_at": "2026-09-28T11:00:16.657Z",
   "count": 228,
   "devices": [
     {
@@ -463,6 +463,15 @@
           "previous_replacement": "01/01/1970"
         },
         {
+          "part_number": "Booklet Finisher:FE3-6957",
+          "part_name": "Paddle :Fin-AB",
+          "sub_item": "FIN-MPDL",
+          "current_counter": 3260,
+          "part_lifetime": 1000000,
+          "life_used_percent": 0.33,
+          "previous_replacement": "01/01/1970"
+        },
+        {
           "part_number": "Staple Finisher:FE3-6957",
           "part_name": "Paddle :Fin-AB",
           "sub_item": "FIN-MPDL",
@@ -472,12 +481,12 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher:FE3-6957",
-          "part_name": "Paddle :Fin-AB",
-          "sub_item": "FIN-MPDL",
-          "current_counter": 3260,
-          "part_lifetime": 1000000,
-          "life_used_percent": 0.33,
+          "part_number": "Booklet Finisher:FM1-L281",
+          "part_name": "Stapler : Fin-L_AB",
+          "sub_item": "FIN-STPR",
+          "current_counter": 120,
+          "part_lifetime": 500000,
+          "life_used_percent": 0.02,
           "previous_replacement": "01/01/1970"
         },
         {
@@ -499,24 +508,6 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher:FM1-L281",
-          "part_name": "Stapler : Fin-L_AB",
-          "sub_item": "FIN-STPR",
-          "current_counter": 120,
-          "part_lifetime": 500000,
-          "life_used_percent": 0.02,
-          "previous_replacement": "01/01/1970"
-        },
-        {
-          "part_number": "Staple Finisher-AB1:FM2-C175",
-          "part_name": "Staple free stapling counter: Fin-L_AB",
-          "sub_item": "FR-STPL",
-          "current_counter": 0,
-          "part_lifetime": 30000,
-          "life_used_percent": 0,
-          "previous_replacement": "01/01/1970"
-        },
-        {
           "part_number": "Inner Finisher:FM2-B760",
           "part_name": "Staple free stapling counter: Fin-L_AB",
           "sub_item": "FR-STPL",
@@ -527,6 +518,15 @@
         },
         {
           "part_number": "Booklet Finisher-AB1:FM2-C175",
+          "part_name": "Staple free stapling counter: Fin-L_AB",
+          "sub_item": "FR-STPL",
+          "current_counter": 0,
+          "part_lifetime": 30000,
+          "life_used_percent": 0,
+          "previous_replacement": "01/01/1970"
+        },
+        {
+          "part_number": "Staple Finisher-AB1:FM2-C175",
           "part_name": "Staple free stapling counter: Fin-L_AB",
           "sub_item": "FR-STPL",
           "current_counter": 0,
@@ -1557,36 +1557,36 @@
           "part_number": "FM1-M435",
           "part_name": "Waste Toner Container",
           "sub_item": "WST-TNR",
-          "current_counter": 151554,
+          "current_counter": 151609,
           "part_lifetime": 54000,
-          "life_used_percent": 280.66,
+          "life_used_percent": 280.76,
           "previous_replacement": "11/10/2024"
         },
         {
           "part_number": "FM1-W677",
           "part_name": "ADF Pickup Unit : DADF",
           "sub_item": "DF-PU-RL",
-          "current_counter": 50859,
+          "current_counter": 50866,
           "part_lifetime": 50000,
-          "life_used_percent": 101.72,
+          "life_used_percent": 101.73,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM1-W655",
           "part_name": "Separation Roller : DADF",
           "sub_item": "DF-SP-RL",
-          "current_counter": 50859,
+          "current_counter": 50866,
           "part_lifetime": 50000,
-          "life_used_percent": 101.72,
+          "life_used_percent": 101.73,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM1-M725",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
-          "current_counter": 6565,
+          "current_counter": 6587,
           "part_lifetime": 200000,
-          "life_used_percent": 3.28,
+          "life_used_percent": 3.29,
           "previous_replacement": "10/06/2026"
         }
       ],
@@ -2271,6 +2271,15 @@
           "previous_replacement": "28/08/2024"
         },
         {
+          "part_number": "FM1-R520(230V)",
+          "part_name": "Fixing Assembly (230V: High)",
+          "sub_item": "FX-UNIT",
+          "current_counter": 73575,
+          "part_lifetime": 420000,
+          "life_used_percent": 17.52,
+          "previous_replacement": "28/08/2024"
+        },
+        {
           "part_number": "FM1-R516(100V)",
           "part_name": "Fixing Assembly (100V: High)",
           "sub_item": "FX-UNIT",
@@ -2282,15 +2291,6 @@
         {
           "part_number": "FM1-R518(120V)",
           "part_name": "Fixing Assembly (120V: High)",
-          "sub_item": "FX-UNIT",
-          "current_counter": 73575,
-          "part_lifetime": 420000,
-          "life_used_percent": 17.52,
-          "previous_replacement": "28/08/2024"
-        },
-        {
-          "part_number": "FM1-R520(230V)",
-          "part_name": "Fixing Assembly (230V: High)",
           "sub_item": "FX-UNIT",
           "current_counter": 73575,
           "part_lifetime": 420000,
@@ -2460,15 +2460,6 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher:FE3-6957",
-          "part_name": "Paddle :Fin-AB",
-          "sub_item": "FIN-MPDL",
-          "current_counter": 0,
-          "part_lifetime": 1000000,
-          "life_used_percent": 0,
-          "previous_replacement": "01/01/1970"
-        },
-        {
           "part_number": "Staple Finisher:FE3-6957",
           "part_name": "Paddle :Fin-AB",
           "sub_item": "FIN-MPDL",
@@ -2478,11 +2469,11 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher:FM1-L281",
-          "part_name": "Stapler : Fin-L_AB",
-          "sub_item": "FIN-STPR",
+          "part_number": "Booklet Finisher:FE3-6957",
+          "part_name": "Paddle :Fin-AB",
+          "sub_item": "FIN-MPDL",
           "current_counter": 0,
-          "part_lifetime": 500000,
+          "part_lifetime": 1000000,
           "life_used_percent": 0,
           "previous_replacement": "01/01/1970"
         },
@@ -2505,6 +2496,15 @@
           "previous_replacement": "01/01/1970"
         },
         {
+          "part_number": "Booklet Finisher:FM1-L281",
+          "part_name": "Stapler : Fin-L_AB",
+          "sub_item": "FIN-STPR",
+          "current_counter": 0,
+          "part_lifetime": 500000,
+          "life_used_percent": 0,
+          "previous_replacement": "01/01/1970"
+        },
+        {
           "part_number": "Booklet Finisher-AB1:FM2-C175",
           "part_name": "Staple free stapling counter: Fin-L_AB",
           "sub_item": "FR-STPL",
@@ -2514,7 +2514,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Inner Finisher:FM2-B760",
+          "part_number": "Staple Finisher-AB1:FM2-C175",
           "part_name": "Staple free stapling counter: Fin-L_AB",
           "sub_item": "FR-STPL",
           "current_counter": 0,
@@ -2523,7 +2523,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Staple Finisher-AB1:FM2-C175",
+          "part_number": "Inner Finisher:FM2-B760",
           "part_name": "Staple free stapling counter: Fin-L_AB",
           "sub_item": "FR-STPL",
           "current_counter": 0,
@@ -4748,7 +4748,7 @@
       "contract_no": "CapricomWirelss",
       "contract_start": "2023-08-01",
       "contract_end": "2023-08-01",
-      "last_communication": "27/09/2026 20:19",
+      "last_communication": "28/09/2026 12:19",
       "toner_cartridges": [
         {
           "colour": "B",
@@ -4866,7 +4866,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "High Capacity Cassette Feeding Unit-D1:FM1-U030",
+          "part_number": "Cassette Feeding Unit-AR1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C2-SP-RL",
           "current_counter": 0,
@@ -4884,7 +4884,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Cassette Feeding Unit-AR1:FM1-U030",
+          "part_number": "High Capacity Cassette Feeding Unit-D1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C2-SP-RL",
           "current_counter": 0,
@@ -4948,21 +4948,21 @@
         }
       ],
       "billing_counters": {
-        "101": 245105,
-        "102": 245105,
+        "101": 245163,
+        "102": 245163,
         "103": 0,
-        "104": 245105,
-        "108": 245105,
-        "109": 245105,
+        "104": 245163,
+        "108": 245163,
+        "109": 245163,
         "112": 0,
-        "113": 245105,
+        "113": 245163,
         "181": 0,
-        "501": 134455,
+        "501": 134563,
         "064": 1,
         "071": 7
       },
-      "total_counter": 134455,
-      "mono_counter": 245105,
+      "total_counter": 134563,
+      "mono_counter": 245163,
       "colour_counter": 0
     },
     {
@@ -5817,63 +5817,63 @@
           "part_number": "FM1-P720",
           "part_name": "ADF Maintenance Kit",
           "sub_item": "DF-PU-RL",
-          "current_counter": 138736,
+          "current_counter": 138762,
           "part_lifetime": 50000,
-          "life_used_percent": 277.47,
+          "life_used_percent": 277.52,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM1-P720",
           "part_name": "ADF Maintenance Kit",
           "sub_item": "DF-SP-RL",
-          "current_counter": 138736,
+          "current_counter": 138762,
           "part_lifetime": 50000,
-          "life_used_percent": 277.47,
+          "life_used_percent": 277.52,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM1-U030",
           "part_name": "Cassette 1 Feed Roller",
           "sub_item": "C1-FD-RL",
-          "current_counter": 298754,
+          "current_counter": 298869,
           "part_lifetime": 225000,
-          "life_used_percent": 132.78,
+          "life_used_percent": 132.83,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM1-U030",
           "part_name": "Cassette1 Separation Roller",
           "sub_item": "C1-SP-RL",
-          "current_counter": 298754,
+          "current_counter": 298869,
           "part_lifetime": 225000,
-          "life_used_percent": 132.78,
+          "life_used_percent": 132.83,
           "previous_replacement": "01/01/1970"
-        },
-        {
-          "part_number": "FM1-U027(120V)",
-          "part_name": "Fixing Assembly",
-          "sub_item": "FX-UNIT",
-          "current_counter": 13842,
-          "part_lifetime": 225000,
-          "life_used_percent": 6.15,
-          "previous_replacement": "20/05/2026"
         },
         {
           "part_number": "FM1-U028(230V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
-          "current_counter": 13842,
+          "current_counter": 13957,
           "part_lifetime": 225000,
-          "life_used_percent": 6.15,
+          "life_used_percent": 6.2,
+          "previous_replacement": "20/05/2026"
+        },
+        {
+          "part_number": "FM1-U027(120V)",
+          "part_name": "Fixing Assembly",
+          "sub_item": "FX-UNIT",
+          "current_counter": 13957,
+          "part_lifetime": 225000,
+          "life_used_percent": 6.2,
           "previous_replacement": "20/05/2026"
         },
         {
           "part_number": "FM1-U032",
           "part_name": "Transfer Roller",
           "sub_item": "TR-ROLL",
-          "current_counter": 13842,
+          "current_counter": 13957,
           "part_lifetime": 225000,
-          "life_used_percent": 6.15,
+          "life_used_percent": 6.2,
           "previous_replacement": "20/05/2026"
         },
         {
@@ -6687,7 +6687,7 @@
       "contract_no": "TOTALFAUNA",
       "contract_start": "2026-08-01",
       "contract_end": "2026-08-01",
-      "last_communication": "28/09/2026 01:00",
+      "last_communication": "28/09/2026 13:00",
       "toner_cartridges": [
         {
           "colour": "C",
@@ -6709,20 +6709,20 @@
       "toner_alarm": "1",
       "parts": [],
       "billing_counters": {
-        "101": 1901,
-        "102": 1901,
-        "104": 1901,
-        "105": 41,
-        "106": 41,
-        "108": 1860,
-        "109": 1860,
-        "113": 1860,
-        "121": 41,
-        "123": 41,
-        "501": 783
+        "101": 1911,
+        "102": 1911,
+        "104": 1911,
+        "105": 42,
+        "106": 42,
+        "108": 1869,
+        "109": 1869,
+        "113": 1869,
+        "121": 42,
+        "123": 42,
+        "501": 790
       },
-      "total_counter": 783,
-      "mono_counter": 1860,
+      "total_counter": 790,
+      "mono_counter": 1869,
       "colour_counter": null
     },
     {
@@ -7893,7 +7893,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Cassette Module-AG1:FM1-U030",
+          "part_number": "Cassette Feeding Unit-AR1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C2-SP-RL",
           "current_counter": 0,
@@ -7911,7 +7911,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Cassette Feeding Unit-AR1:FM1-U030",
+          "part_number": "Cassette Module-AG1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C2-SP-RL",
           "current_counter": 0,
@@ -8136,7 +8136,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "High Capacity Cassette Feeding Unit-D1:FM1-U030",
+          "part_number": "Cassette Module-AG1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C2-SP-RL",
           "current_counter": 0,
@@ -8145,7 +8145,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Cassette Module-AG1:FM1-U030",
+          "part_number": "High Capacity Cassette Feeding Unit-D1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C2-SP-RL",
           "current_counter": 0,
@@ -8172,7 +8172,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Cassette Module-AG1:FM1-U030",
+          "part_number": "High Capacity Cassette Feeding Unit-D1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C3-SP-RL",
           "current_counter": 0,
@@ -8181,7 +8181,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "High Capacity Cassette Feeding Unit-D1:FM1-U030",
+          "part_number": "Cassette Module-AG1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C3-SP-RL",
           "current_counter": 0,
@@ -10166,7 +10166,7 @@
           "previous_replacement": "09/10/2020"
         },
         {
-          "part_number": "120V:FM1-D276",
+          "part_number": "230V:FM1-D277",
           "part_name": "Fixing Unit",
           "sub_item": "FX-UNIT",
           "current_counter": 169685,
@@ -10175,7 +10175,7 @@
           "previous_replacement": "09/10/2020"
         },
         {
-          "part_number": "230V:FM1-D277",
+          "part_number": "120V:FM1-D276",
           "part_name": "Fixing Unit",
           "sub_item": "FX-UNIT",
           "current_counter": 169685,
@@ -10938,7 +10938,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher-AE1:FM1-L281",
+          "part_number": "Inner Finisher-L1:FM1-N381",
           "part_name": "Stapler",
           "sub_item": "FIN-STPR",
           "current_counter": 0,
@@ -10947,7 +10947,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Inner Finisher-L1:FM1-N381",
+          "part_number": "Booklet Finisher-AE1:FM1-L281",
           "part_name": "Stapler",
           "sub_item": "FIN-STPR",
           "current_counter": 0,
@@ -11652,7 +11652,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Inner Finisher-L1:FM1-N381",
+          "part_number": "Booklet Finisher-AE1:FM1-L281",
           "part_name": "Stapler",
           "sub_item": "FIN-STPR",
           "current_counter": 0,
@@ -11661,7 +11661,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher-AE1:FM1-L281",
+          "part_number": "Inner Finisher-L1:FM1-N381",
           "part_name": "Stapler",
           "sub_item": "FIN-STPR",
           "current_counter": 0,
@@ -11679,7 +11679,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Inner Finisher-L1:FM2-B760",
+          "part_number": "Staple Finisher-AE1:FM2-C175",
           "part_name": "Staple-free Staple Unit",
           "sub_item": "FR-STPL",
           "current_counter": 0,
@@ -11688,7 +11688,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Staple Finisher-AE1:FM2-C175",
+          "part_number": "Inner Finisher-L1:FM2-B760",
           "part_name": "Staple-free Staple Unit",
           "sub_item": "FR-STPL",
           "current_counter": 0,
@@ -12224,7 +12224,7 @@
           "previous_replacement": "17/07/2025"
         },
         {
-          "part_number": "Cassette Module-AX1:FM1-U030",
+          "part_number": "Cassette Module-AG1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C2-FD-RL",
           "current_counter": 0,
@@ -12242,7 +12242,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Cassette Module-AG1:FM1-U030",
+          "part_number": "Cassette Module-AX1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C2-FD-RL",
           "current_counter": 0,
@@ -12323,7 +12323,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "High Capacity Cassette Feeding Unit-D1:FM1-U030",
+          "part_number": "Cassette Module-AG1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C3-SP-RL",
           "current_counter": 0,
@@ -12332,7 +12332,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Cassette Module-AG1:FM1-U030",
+          "part_number": "High Capacity Cassette Feeding Unit-D1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C3-SP-RL",
           "current_counter": 0,
@@ -13944,7 +13944,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Cassette Module-AX1:FM1-U030",
+          "part_number": "Cassette Module-AG1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C3-FD-RL",
           "current_counter": 0,
@@ -13962,18 +13962,9 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Cassette Module-AG1:FM1-U030",
+          "part_number": "Cassette Module-AX1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C3-FD-RL",
-          "current_counter": 0,
-          "part_lifetime": 225000,
-          "life_used_percent": 0,
-          "previous_replacement": "01/01/1970"
-        },
-        {
-          "part_number": "Cassette Module-AG1:FM1-U030",
-          "part_name": "Roller Kit",
-          "sub_item": "C3-SP-RL",
           "current_counter": 0,
           "part_lifetime": 225000,
           "life_used_percent": 0,
@@ -13998,7 +13989,16 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Cassette Module-AX1:FM1-U030",
+          "part_number": "Cassette Module-AG1:FM1-U030",
+          "part_name": "Roller Kit",
+          "sub_item": "C3-SP-RL",
+          "current_counter": 0,
+          "part_lifetime": 225000,
+          "life_used_percent": 0,
+          "previous_replacement": "01/01/1970"
+        },
+        {
+          "part_number": "Cassette Module-AG1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C4-FD-RL",
           "current_counter": 0,
@@ -14007,7 +14007,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Cassette Module-AG1:FM1-U030",
+          "part_number": "Cassette Module-AX1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C4-FD-RL",
           "current_counter": 0,
@@ -14700,43 +14700,43 @@
           "part_number": "FM1-A606",
           "part_name": "Waste Toner Container",
           "sub_item": "WST-TNR",
-          "current_counter": 76095,
+          "current_counter": 76151,
           "part_lifetime": 497000,
-          "life_used_percent": 15.31,
+          "life_used_percent": 15.32,
           "previous_replacement": "16/08/2023"
         },
         {
           "part_number": "FL1-B055",
           "part_name": "Secondary Transfer Outer Roller",
           "sub_item": "2TR-ROLL",
-          "current_counter": 32393,
+          "current_counter": 32416,
           "part_lifetime": 240000,
-          "life_used_percent": 13.5,
+          "life_used_percent": 13.51,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM2-H258",
           "part_name": "ITB Unit",
           "sub_item": "TR-UNIT",
-          "current_counter": 32393,
+          "current_counter": 32416,
           "part_lifetime": 240000,
-          "life_used_percent": 13.5,
+          "life_used_percent": 13.51,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM2-G092",
           "part_name": "Developing Unit (Bk)",
           "sub_item": "DV-UNT-K",
-          "current_counter": 32352,
+          "current_counter": 32375,
           "part_lifetime": 240000,
-          "life_used_percent": 13.48,
+          "life_used_percent": 13.49,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM2-H613 (230V)",
           "part_name": "Fixing Unit (230V)",
           "sub_item": "FX-UNIT",
-          "current_counter": 32196,
+          "current_counter": 32215,
           "part_lifetime": 240000,
           "life_used_percent": 13.42,
           "previous_replacement": "30/05/2024"
@@ -14745,7 +14745,7 @@
           "part_number": "FM2-H612 (120V)",
           "part_name": "Fixing Unit (120V)",
           "sub_item": "FX-UNIT",
-          "current_counter": 32196,
+          "current_counter": 32215,
           "part_lifetime": 240000,
           "life_used_percent": 13.42,
           "previous_replacement": "30/05/2024"
@@ -14754,7 +14754,7 @@
           "part_number": "FM2-H612 (100V)",
           "part_name": "Fixing Unit (100V)",
           "sub_item": "FX-UNIT",
-          "current_counter": 32196,
+          "current_counter": 32215,
           "part_lifetime": 240000,
           "life_used_percent": 13.42,
           "previous_replacement": "30/05/2024"
@@ -14763,7 +14763,7 @@
           "part_number": "FM2-G091",
           "part_name": "Developing Unit (C)",
           "sub_item": "DV-UNT-C",
-          "current_counter": 14581,
+          "current_counter": 14592,
           "part_lifetime": 240000,
           "life_used_percent": 6.08,
           "previous_replacement": "01/01/1970"
@@ -14772,7 +14772,7 @@
           "part_number": "FM2-G090",
           "part_name": "Developing Unit (M)",
           "sub_item": "DV-UNT-M",
-          "current_counter": 14581,
+          "current_counter": 14592,
           "part_lifetime": 240000,
           "life_used_percent": 6.08,
           "previous_replacement": "01/01/1970"
@@ -14781,7 +14781,7 @@
           "part_number": "FM2-G089",
           "part_name": "Developing Unit (Y)",
           "sub_item": "DV-UNT-Y",
-          "current_counter": 14581,
+          "current_counter": 14592,
           "part_lifetime": 240000,
           "life_used_percent": 6.08,
           "previous_replacement": "01/01/1970"
@@ -14790,7 +14790,7 @@
           "part_number": "FL4-0763",
           "part_name": "Cassette 1 Feed Roller",
           "sub_item": "C1-FD-RL",
-          "current_counter": 26283,
+          "current_counter": 26306,
           "part_lifetime": 500000,
           "life_used_percent": 5.26,
           "previous_replacement": "01/01/1970"
@@ -14799,7 +14799,7 @@
           "part_number": "FL4-0762",
           "part_name": "Cassette 1 Pickup Roller",
           "sub_item": "C1-PU-RL",
-          "current_counter": 26283,
+          "current_counter": 26306,
           "part_lifetime": 500000,
           "life_used_percent": 5.26,
           "previous_replacement": "01/01/1970"
@@ -14808,7 +14808,7 @@
           "part_number": "FL1-3762",
           "part_name": "Cassette 1 Separation Roller",
           "sub_item": "C1-SP-RL",
-          "current_counter": 26283,
+          "current_counter": 26306,
           "part_lifetime": 500000,
           "life_used_percent": 5.26,
           "previous_replacement": "01/01/1970"
@@ -14913,7 +14913,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher-AE1:FM1-L281",
+          "part_number": "Staple Finisher-AE1:FM1-L281",
           "part_name": "Stapler",
           "sub_item": "FIN-STPR",
           "current_counter": 0,
@@ -14931,7 +14931,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Staple Finisher-AE1:FM1-L281",
+          "part_number": "Booklet Finisher-AE1:FM1-L281",
           "part_name": "Stapler",
           "sub_item": "FIN-STPR",
           "current_counter": 0,
@@ -15051,7 +15051,7 @@
           "part_number": "8528B",
           "part_name": "Drum Unit (C)",
           "sub_item": "PT-DR-C",
-          "current_counter": 14581,
+          "current_counter": 14592,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "30/05/2024"
@@ -15060,7 +15060,7 @@
           "part_number": "8528B",
           "part_name": "Drum Unit (M)",
           "sub_item": "PT-DR-M",
-          "current_counter": 14581,
+          "current_counter": 14592,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "30/05/2024"
@@ -15069,7 +15069,7 @@
           "part_number": "8528B",
           "part_name": "Drum Unit (Y)",
           "sub_item": "PT-DR-Y",
-          "current_counter": 14581,
+          "current_counter": 14592,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "30/05/2024"
@@ -15078,7 +15078,7 @@
           "part_number": "8528B",
           "part_name": "Drum Unit (Bk)",
           "sub_item": "PT-DRM",
-          "current_counter": 32351,
+          "current_counter": 32374,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "30/05/2024"
@@ -17928,7 +17928,7 @@
       "contract_no": "MarindiFuneral",
       "contract_start": "2025-12-01",
       "contract_end": "2025-12-01",
-      "last_communication": "28/09/2026 07:59",
+      "last_communication": "28/09/2026 12:25",
       "toner_cartridges": [
         {
           "colour": "C",
@@ -18374,32 +18374,32 @@
         }
       ],
       "billing_counters": {
-        "101": 68385,
-        "102": 68389,
+        "101": 68395,
+        "102": 68399,
         "103": 4,
-        "104": 68381,
-        "105": 63393,
-        "106": 63397,
-        "108": 4992,
-        "109": 4992,
+        "104": 68391,
+        "105": 63400,
+        "106": 63404,
+        "108": 4995,
+        "109": 4995,
         "112": 0,
-        "113": 4992,
-        "121": 63389,
+        "113": 4995,
+        "121": 63396,
         "122": 4,
-        "123": 63389,
+        "123": 63396,
         "181": 0,
         "182": 0,
         "183": 0,
         "184": 1,
-        "501": 2896,
+        "501": 2905,
         "064": 0,
         "071": 3,
         "072": 3,
         "073": 3,
         "074": 4
       },
-      "total_counter": 2896,
-      "mono_counter": 4992,
+      "total_counter": 2905,
+      "mono_counter": 4995,
       "colour_counter": 0
     },
     {
@@ -20888,7 +20888,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "FM1-J023(120V)",
+          "part_number": "FM1-J024(230V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
           "current_counter": 181840,
@@ -20897,7 +20897,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "FM1-J024(230V)",
+          "part_number": "FM1-J023(120V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
           "current_counter": 181840,
@@ -20978,7 +20978,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "FC0-5080(excl. CCN)",
+          "part_number": "FC7-9502(CCN only)",
           "part_name": "Feed Roller(Cassette 2)",
           "sub_item": "C2-FD-RL",
           "current_counter": 34214,
@@ -20987,7 +20987,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "FC7-9502(CCN only)",
+          "part_number": "FC0-5080(excl. CCN)",
           "part_name": "Feed Roller(Cassette 2)",
           "sub_item": "C2-FD-RL",
           "current_counter": 34214,
@@ -24592,7 +24592,7 @@
       "contract_no": "NHLAKEATT",
       "contract_start": "2026-03-01",
       "contract_end": "2026-03-01",
-      "last_communication": "27/09/2026 20:48",
+      "last_communication": "28/09/2026 12:48",
       "toner_cartridges": [
         {
           "colour": "B",
@@ -24621,16 +24621,16 @@
         }
       ],
       "billing_counters": {
-        "101": 5502,
-        "102": 5502,
-        "104": 5502,
-        "108": 5502,
-        "109": 5502,
-        "113": 5502,
-        "501": 3615
+        "101": 5515,
+        "102": 5515,
+        "104": 5515,
+        "108": 5515,
+        "109": 5515,
+        "113": 5515,
+        "501": 3620
       },
-      "total_counter": 3615,
-      "mono_counter": 5502,
+      "total_counter": 3620,
+      "mono_counter": 5515,
       "colour_counter": null
     },
     {
@@ -27153,7 +27153,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher-AE1:FM1-L281",
+          "part_number": "Inner Finisher-L1:FM1-N381",
           "part_name": "Stapler : Fin-L_AE",
           "sub_item": "FIN-STPR",
           "current_counter": 0,
@@ -27162,7 +27162,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Inner Finisher-L1:FM1-N381",
+          "part_number": "Booklet Finisher-AE1:FM1-L281",
           "part_name": "Stapler : Fin-L_AE",
           "sub_item": "FIN-STPR",
           "current_counter": 0,
@@ -27189,7 +27189,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher-AE1:FM2-C175",
+          "part_number": "Staple Finisher-AE1:FM2-C175",
           "part_name": "Staple free stapling counter: Fin-L_AE",
           "sub_item": "FR-STPL",
           "current_counter": 0,
@@ -27198,7 +27198,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Staple Finisher-AE1:FM2-C175",
+          "part_number": "Booklet Finisher-AE1:FM2-C175",
           "part_name": "Staple free stapling counter: Fin-L_AE",
           "sub_item": "FR-STPL",
           "current_counter": 0,
@@ -30597,8 +30597,8 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "FM2-H612 (120V)",
-          "part_name": "Fixing Unit (120V)",
+          "part_number": "FM2-H613 (230V)",
+          "part_name": "Fixing Unit (230V)",
           "sub_item": "FX-UNIT",
           "current_counter": 142707,
           "part_lifetime": 240000,
@@ -30606,8 +30606,8 @@
           "previous_replacement": "24/06/2025"
         },
         {
-          "part_number": "FM2-H613 (230V)",
-          "part_name": "Fixing Unit (230V)",
+          "part_number": "FM2-H612 (120V)",
+          "part_name": "Fixing Unit (120V)",
           "sub_item": "FX-UNIT",
           "current_counter": 142707,
           "part_lifetime": 240000,
@@ -30795,15 +30795,6 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher-AE1:FM2-C175",
-          "part_name": "Staple-free Staple Unit",
-          "sub_item": "FR-STPL",
-          "current_counter": 0,
-          "part_lifetime": 30000,
-          "life_used_percent": 0,
-          "previous_replacement": "01/01/1970"
-        },
-        {
           "part_number": "Inner Finisher-L1:FM2-B760",
           "part_name": "Staple-free Staple Unit",
           "sub_item": "FR-STPL",
@@ -30814,6 +30805,15 @@
         },
         {
           "part_number": "Staple Finisher-AE1:FM2-C175",
+          "part_name": "Staple-free Staple Unit",
+          "sub_item": "FR-STPL",
+          "current_counter": 0,
+          "part_lifetime": 30000,
+          "life_used_percent": 0,
+          "previous_replacement": "01/01/1970"
+        },
+        {
+          "part_number": "Booklet Finisher-AE1:FM2-C175",
           "part_name": "Staple-free Staple Unit",
           "sub_item": "FR-STPL",
           "current_counter": 0,
@@ -31402,7 +31402,7 @@
       "contract_no": "Ratsoma",
       "contract_start": "2023-08-01",
       "contract_end": "2023-08-01",
-      "last_communication": "27/09/2026 20:27",
+      "last_communication": "28/09/2026 12:27",
       "toner_cartridges": [
         {
           "colour": "B",
@@ -31461,32 +31461,32 @@
         }
       ],
       "billing_counters": {
-        "101": 145589,
-        "102": 145589,
+        "101": 145699,
+        "102": 145699,
         "103": 0,
-        "104": 145589,
-        "105": 48164,
-        "106": 48164,
-        "108": 97425,
-        "109": 97425,
+        "104": 145699,
+        "105": 48205,
+        "106": 48205,
+        "108": 97494,
+        "109": 97494,
         "112": 0,
-        "113": 97425,
-        "121": 48164,
+        "113": 97494,
+        "121": 48205,
         "122": 0,
-        "123": 48164,
+        "123": 48205,
         "181": 0,
         "182": 0,
         "183": 0,
         "184": 0,
-        "501": 31798,
+        "501": 31838,
         "064": 2,
         "071": 14,
         "072": 9,
         "073": 8,
         "074": 8
       },
-      "total_counter": 31798,
-      "mono_counter": 97425,
+      "total_counter": 31838,
+      "mono_counter": 97494,
       "colour_counter": 0
     },
     {
@@ -32147,36 +32147,36 @@
           "part_number": "FM1-C318",
           "part_name": "Secondary TransferOuter Roller",
           "sub_item": "2TR-ROLL",
-          "current_counter": 54016,
+          "current_counter": 54028,
           "part_lifetime": 150000,
-          "life_used_percent": 36.01,
+          "life_used_percent": 36.02,
           "previous_replacement": "31/01/1970"
         },
         {
           "part_number": "FM1-A153",
           "part_name": "ITB Unit",
           "sub_item": "TR-BLT",
-          "current_counter": 54016,
+          "current_counter": 54028,
           "part_lifetime": 150000,
-          "life_used_percent": 36.01,
+          "life_used_percent": 36.02,
           "previous_replacement": "31/01/1970"
         },
         {
           "part_number": "FM0-0033(100V)FM0-0072(120V)FM0-0073(230V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
-          "current_counter": 47283,
+          "current_counter": 47291,
           "part_lifetime": 150000,
-          "life_used_percent": 31.52,
+          "life_used_percent": 31.53,
           "previous_replacement": "31/01/1970"
         },
         {
           "part_number": "FM0-0015",
           "part_name": "Waste Toner Container",
           "sub_item": "WST-TNR",
-          "current_counter": 15519,
+          "current_counter": 15535,
           "part_lifetime": 57000,
-          "life_used_percent": 27.23,
+          "life_used_percent": 27.25,
           "previous_replacement": "08/10/2025"
         },
         {
@@ -32228,7 +32228,7 @@
           "part_number": "8520B",
           "part_name": "Bk Drum Unit",
           "sub_item": "PT-DRM",
-          "current_counter": 3494,
+          "current_counter": 3502,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "03/07/2026"
@@ -33007,153 +33007,153 @@
           "part_number": "FE3-4783",
           "part_name": "Sec Transfer Outer Roller",
           "sub_item": "2TR-ROLL",
-          "current_counter": 395506,
+          "current_counter": 395844,
           "part_lifetime": 180000,
-          "life_used_percent": 219.73,
+          "life_used_percent": 219.91,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM1-A605",
           "part_name": "ITB Unit",
           "sub_item": "TR-UNIT",
-          "current_counter": 395506,
+          "current_counter": 395844,
           "part_lifetime": 180000,
-          "life_used_percent": 219.73,
+          "life_used_percent": 219.91,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM1-B267",
           "part_name": "Developing Unit (Bk)",
           "sub_item": "DV-UNT-K",
-          "current_counter": 395465,
+          "current_counter": 395803,
           "part_lifetime": 240000,
-          "life_used_percent": 164.78,
+          "life_used_percent": 164.92,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "DADF-BA1:FM1-D470",
           "part_name": "Pickup Roller Unit : DADF",
           "sub_item": "DF-PU-RL",
-          "current_counter": 129799,
+          "current_counter": 130984,
           "part_lifetime": 80000,
-          "life_used_percent": 162.25,
+          "life_used_percent": 163.73,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "DADF-BA1:FM1-D471",
           "part_name": "Separation Roller : DADF",
           "sub_item": "DF-SP-RL",
-          "current_counter": 129799,
+          "current_counter": 130984,
           "part_lifetime": 80000,
-          "life_used_percent": 162.25,
+          "life_used_percent": 163.73,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "8528B",
           "part_name": "Drum Unit (Bk) estimated life value",
           "sub_item": "PT_DRM",
-          "current_counter": 138,
+          "current_counter": 139,
           "part_lifetime": 100,
-          "life_used_percent": 138,
+          "life_used_percent": 139,
           "previous_replacement": "22/09/2025"
         },
         {
           "part_number": "FM1-B265",
           "part_name": "Developing Unit (M)",
           "sub_item": "DV-UNT-M",
-          "current_counter": 306102,
+          "current_counter": 306413,
           "part_lifetime": 240000,
-          "life_used_percent": 127.54,
+          "life_used_percent": 127.67,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM1-B264",
           "part_name": "Developing Unit (Y)",
           "sub_item": "DV-UNT-Y",
-          "current_counter": 306102,
+          "current_counter": 306413,
           "part_lifetime": 240000,
-          "life_used_percent": 127.54,
+          "life_used_percent": 127.67,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FL4-0763",
           "part_name": "Cassette 1 Feed Roller",
           "sub_item": "C1-FD-RL",
-          "current_counter": 366971,
+          "current_counter": 367296,
           "part_lifetime": 500000,
-          "life_used_percent": 73.39,
+          "life_used_percent": 73.46,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FL4-0762",
           "part_name": "Cassette 1 Pickup Roller",
           "sub_item": "C1-PU-RL",
-          "current_counter": 366971,
+          "current_counter": 367296,
           "part_lifetime": 500000,
-          "life_used_percent": 73.39,
+          "life_used_percent": 73.46,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FL1-3762",
           "part_name": "Cassette 1 Separation Roller",
           "sub_item": "C1-SP-RL",
-          "current_counter": 366971,
+          "current_counter": 367296,
           "part_lifetime": 500000,
-          "life_used_percent": 73.39,
+          "life_used_percent": 73.46,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "Single Pass DADF-C1:FM1-T417",
           "part_name": "Pickup Roller Unit : DADF",
           "sub_item": "DF-PU-RL",
-          "current_counter": 129799,
+          "current_counter": 130984,
           "part_lifetime": 200000,
-          "life_used_percent": 64.9,
+          "life_used_percent": 65.49,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "Single Pass DADF-C1:FM1-T423",
           "part_name": "Separation Roller : DADF",
           "sub_item": "DF-SP-RL",
-          "current_counter": 129799,
+          "current_counter": 130984,
           "part_lifetime": 200000,
-          "life_used_percent": 64.9,
+          "life_used_percent": 65.49,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM2-B739(100V)",
           "part_name": "Fixing Unit (100V)",
           "sub_item": "FX-UNIT",
-          "current_counter": 110469,
+          "current_counter": 110807,
           "part_lifetime": 240000,
-          "life_used_percent": 46.03,
+          "life_used_percent": 46.17,
           "previous_replacement": "16/10/2025"
         },
         {
           "part_number": "FM1-Y640(230V)",
           "part_name": "Fixing Unit (230V)",
           "sub_item": "FX-UNIT",
-          "current_counter": 110469,
+          "current_counter": 110807,
           "part_lifetime": 240000,
-          "life_used_percent": 46.03,
+          "life_used_percent": 46.17,
           "previous_replacement": "16/10/2025"
         },
         {
           "part_number": "FM2-B739(120V)",
           "part_name": "Fixing Unit (120V)",
           "sub_item": "FX-UNIT",
-          "current_counter": 110469,
+          "current_counter": 110807,
           "part_lifetime": 240000,
-          "life_used_percent": 46.03,
+          "life_used_percent": 46.17,
           "previous_replacement": "16/10/2025"
         },
         {
           "part_number": "FM1-A606",
           "part_name": "Waste Toner Container",
           "sub_item": "WST-TNR",
-          "current_counter": 111887,
+          "current_counter": 113158,
           "part_lifetime": 252100,
-          "life_used_percent": 44.38,
+          "life_used_percent": 44.89,
           "previous_replacement": "19/06/2026"
         },
         {
@@ -33178,25 +33178,25 @@
           "part_number": "8528B",
           "part_name": "Drum Unit (Y) estimated life value",
           "sub_item": "PT_DR-Y",
-          "current_counter": 13,
+          "current_counter": 14,
           "part_lifetime": 100,
-          "life_used_percent": 13,
+          "life_used_percent": 14,
           "previous_replacement": "11/08/2026"
         },
         {
           "part_number": "FM1-B266",
           "part_name": "Developing Unit (C)",
           "sub_item": "DV-UNT-C",
-          "current_counter": 18728,
+          "current_counter": 19039,
           "part_lifetime": 240000,
-          "life_used_percent": 7.8,
+          "life_used_percent": 7.93,
           "previous_replacement": "15/07/2026"
         },
         {
           "part_number": "FL4-0763",
           "part_name": "Cassette 2 Feed Roller",
           "sub_item": "C2-FD-RL",
-          "current_counter": 13638,
+          "current_counter": 13648,
           "part_lifetime": 500000,
           "life_used_percent": 2.73,
           "previous_replacement": "01/01/1970"
@@ -33205,7 +33205,7 @@
           "part_number": "FL4-0762",
           "part_name": "Cassette 2 Pickup Roller",
           "sub_item": "C2-PU-RL",
-          "current_counter": 13638,
+          "current_counter": 13648,
           "part_lifetime": 500000,
           "life_used_percent": 2.73,
           "previous_replacement": "01/01/1970"
@@ -33214,7 +33214,7 @@
           "part_number": "FL1-3762",
           "part_name": "Cassette 2 Separation Roller",
           "sub_item": "C2-SP-RL",
-          "current_counter": 13638,
+          "current_counter": 13648,
           "part_lifetime": 500000,
           "life_used_percent": 2.73,
           "previous_replacement": "01/01/1970"
@@ -33223,7 +33223,7 @@
           "part_number": "DADF-BA1:FE3-5484",
           "part_name": "Left Hinge : reverse",
           "sub_item": "DF-HNG-L",
-          "current_counter": 3548,
+          "current_counter": 3559,
           "part_lifetime": 150000,
           "life_used_percent": 2.37,
           "previous_replacement": "01/01/1970"
@@ -33256,15 +33256,6 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Staple Finisher-AE1:FM1-L281",
-          "part_name": "Stapler : Fin-L_AE",
-          "sub_item": "FIN-STPR",
-          "current_counter": 0,
-          "part_lifetime": 500000,
-          "life_used_percent": 0,
-          "previous_replacement": "01/01/1970"
-        },
-        {
           "part_number": "Inner Finisher-L1:FM1-N381",
           "part_name": "Stapler : Fin-L_AE",
           "sub_item": "FIN-STPR",
@@ -33283,6 +33274,15 @@
           "previous_replacement": "01/01/1970"
         },
         {
+          "part_number": "Staple Finisher-AE1:FM1-L281",
+          "part_name": "Stapler : Fin-L_AE",
+          "sub_item": "FIN-STPR",
+          "current_counter": 0,
+          "part_lifetime": 500000,
+          "life_used_percent": 0,
+          "previous_replacement": "01/01/1970"
+        },
+        {
           "part_number": "Booklet Finisher-AE1:FM2-C175",
           "part_name": "Staple free stapling counter: Fin-L_AE",
           "sub_item": "FR-STPL",
@@ -33292,7 +33292,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Inner Finisher-L1:FM2-B760",
+          "part_number": "Staple Finisher-AE1:FM2-C175",
           "part_name": "Staple free stapling counter: Fin-L_AE",
           "sub_item": "FR-STPL",
           "current_counter": 0,
@@ -33301,7 +33301,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Staple Finisher-AE1:FM2-C175",
+          "part_number": "Inner Finisher-L1:FM2-B760",
           "part_name": "Staple free stapling counter: Fin-L_AE",
           "sub_item": "FR-STPL",
           "current_counter": 0,
@@ -33394,7 +33394,7 @@
           "part_number": "8528B",
           "part_name": "Drum Unit (C)",
           "sub_item": "PT-DR-C",
-          "current_counter": 18729,
+          "current_counter": 19040,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "15/07/2026"
@@ -33403,7 +33403,7 @@
           "part_number": "8528B",
           "part_name": "Drum Unit (M)",
           "sub_item": "PT-DR-M",
-          "current_counter": 18729,
+          "current_counter": 19040,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "11/08/2026"
@@ -33412,7 +33412,7 @@
           "part_number": "8528B",
           "part_name": "Drum Unit (Y)",
           "sub_item": "PT-DR-Y",
-          "current_counter": 11154,
+          "current_counter": 11465,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "11/08/2026"
@@ -33421,7 +33421,7 @@
           "part_number": "8528B",
           "part_name": "Drum Unit (Bk)",
           "sub_item": "PT-DRM",
-          "current_counter": 117685,
+          "current_counter": 118023,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "22/09/2025"
@@ -33729,6 +33729,15 @@
           "previous_replacement": "01/01/1970"
         },
         {
+          "part_number": "High Capacity Cassette Feeding Unit-D1:FM1-U030",
+          "part_name": "Roller Kit",
+          "sub_item": "C2-SP-RL",
+          "current_counter": 0,
+          "part_lifetime": 225000,
+          "life_used_percent": 0,
+          "previous_replacement": "01/01/1970"
+        },
+        {
           "part_number": "Cassette Feeding Unit-AR1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C2-SP-RL",
@@ -33739,15 +33748,6 @@
         },
         {
           "part_number": "Cassette Module-AG1:FM1-U030",
-          "part_name": "Roller Kit",
-          "sub_item": "C2-SP-RL",
-          "current_counter": 0,
-          "part_lifetime": 225000,
-          "life_used_percent": 0,
-          "previous_replacement": "01/01/1970"
-        },
-        {
-          "part_number": "High Capacity Cassette Feeding Unit-D1:FM1-U030",
           "part_name": "Roller Kit",
           "sub_item": "C2-SP-RL",
           "current_counter": 0,
@@ -34358,7 +34358,7 @@
           "previous_replacement": "24/01/2022"
         },
         {
-          "part_number": "Staple Finisher-AE1:FE3-9778",
+          "part_number": "Booklet Finisher-AE1:FE3-9778",
           "part_name": "Tray Torq Limt pts cntr:Fin-AE",
           "sub_item": "TRY-TQLM",
           "current_counter": 37500,
@@ -34367,7 +34367,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher-AE1:FE3-9778",
+          "part_number": "Staple Finisher-AE1:FE3-9778",
           "part_name": "Tray Torq Limt pts cntr:Fin-AE",
           "sub_item": "TRY-TQLM",
           "current_counter": 37500,
@@ -34493,6 +34493,15 @@
           "previous_replacement": "01/01/1970"
         },
         {
+          "part_number": "Inner Finisher-L1:FM1-N381",
+          "part_name": "Stapler : Fin-L_AE",
+          "sub_item": "FIN-STPR",
+          "current_counter": 6585,
+          "part_lifetime": 500000,
+          "life_used_percent": 1.32,
+          "previous_replacement": "01/01/1970"
+        },
+        {
           "part_number": "Staple Finisher-AE1:FM1-L281",
           "part_name": "Stapler : Fin-L_AE",
           "sub_item": "FIN-STPR",
@@ -34503,15 +34512,6 @@
         },
         {
           "part_number": "Booklet Finisher-AE1:FM1-L281",
-          "part_name": "Stapler : Fin-L_AE",
-          "sub_item": "FIN-STPR",
-          "current_counter": 6585,
-          "part_lifetime": 500000,
-          "life_used_percent": 1.32,
-          "previous_replacement": "01/01/1970"
-        },
-        {
-          "part_number": "Inner Finisher-L1:FM1-N381",
           "part_name": "Stapler : Fin-L_AE",
           "sub_item": "FIN-STPR",
           "current_counter": 6585,
@@ -34556,15 +34556,6 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Inner Finisher-L1:FM2-B760",
-          "part_name": "Staple free stapling counter: Fin-L_AE",
-          "sub_item": "FR-STPL",
-          "current_counter": 0,
-          "part_lifetime": 30000,
-          "life_used_percent": 0,
-          "previous_replacement": "01/01/1970"
-        },
-        {
           "part_number": "Staple Finisher-AE1:FM2-C175",
           "part_name": "Staple free stapling counter: Fin-L_AE",
           "sub_item": "FR-STPL",
@@ -34575,6 +34566,15 @@
         },
         {
           "part_number": "Booklet Finisher-AE1:FM2-C175",
+          "part_name": "Staple free stapling counter: Fin-L_AE",
+          "sub_item": "FR-STPL",
+          "current_counter": 0,
+          "part_lifetime": 30000,
+          "life_used_percent": 0,
+          "previous_replacement": "01/01/1970"
+        },
+        {
+          "part_number": "Inner Finisher-L1:FM2-B760",
           "part_name": "Staple free stapling counter: Fin-L_AE",
           "sub_item": "FR-STPL",
           "current_counter": 0,
@@ -34701,7 +34701,7 @@
       "contract_no": "HouersAcademy",
       "contract_start": "2026-07-01",
       "contract_end": "2026-07-01",
-      "last_communication": "28/09/2026 00:10",
+      "last_communication": "28/09/2026 12:10",
       "toner_cartridges": [
         {
           "colour": "C",
@@ -34723,20 +34723,20 @@
       "toner_alarm": "1",
       "parts": [],
       "billing_counters": {
-        "101": 3609,
-        "102": 3609,
-        "104": 3609,
-        "105": 642,
-        "106": 642,
-        "108": 2967,
-        "109": 2967,
-        "113": 2967,
-        "121": 642,
-        "123": 642,
-        "501": 2981
+        "101": 3635,
+        "102": 3635,
+        "104": 3635,
+        "105": 655,
+        "106": 655,
+        "108": 2980,
+        "109": 2980,
+        "113": 2980,
+        "121": 655,
+        "123": 655,
+        "501": 3020
       },
-      "total_counter": 2981,
-      "mono_counter": 2967,
+      "total_counter": 3020,
+      "mono_counter": 2980,
       "colour_counter": null
     },
     {
@@ -36265,7 +36265,7 @@
           "previous_replacement": "05/08/2021"
         },
         {
-          "part_number": "DADF-BA1:FB5-9410",
+          "part_number": "Single Pass DADF-C1:FB5-9410",
           "part_name": "Stamp",
           "sub_item": "STAMP",
           "current_counter": 0,
@@ -36274,7 +36274,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Single Pass DADF-C1:FB5-9410",
+          "part_number": "DADF-BA1:FB5-9410",
           "part_name": "Stamp",
           "sub_item": "STAMP",
           "current_counter": 0,
@@ -36486,8 +36486,8 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Cassette Feeding Unit-AS1_AT1:FM1-U030",
-          "part_name": "Roller Kit CR-102",
+          "part_number": "Cassette Module-AJ1:FM1-W269",
+          "part_name": "Roller Kit",
           "sub_item": "C2-FD-RL",
           "current_counter": 0,
           "part_lifetime": 150000,
@@ -36495,8 +36495,8 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Cassette Module-AJ1:FM1-W269",
-          "part_name": "Roller Kit",
+          "part_number": "Cassette Feeding Unit-AS1_AT1:FM1-U030",
+          "part_name": "Roller Kit CR-102",
           "sub_item": "C2-FD-RL",
           "current_counter": 0,
           "part_lifetime": 150000,
@@ -36758,6 +36758,15 @@
           "previous_replacement": "01/01/1970"
         },
         {
+          "part_number": "FM1-R727(230V)",
+          "part_name": "Fixing Assembly",
+          "sub_item": "FX-UNIT",
+          "current_counter": 49530,
+          "part_lifetime": 150000,
+          "life_used_percent": 33.02,
+          "previous_replacement": "01/01/1970"
+        },
+        {
           "part_number": "FM1-R726(120V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
@@ -36768,15 +36777,6 @@
         },
         {
           "part_number": "FM1-R725(100V)",
-          "part_name": "Fixing Assembly",
-          "sub_item": "FX-UNIT",
-          "current_counter": 49530,
-          "part_lifetime": 150000,
-          "life_used_percent": 33.02,
-          "previous_replacement": "01/01/1970"
-        },
-        {
-          "part_number": "FM1-R727(230V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
           "current_counter": 49530,
@@ -37564,6 +37564,15 @@
           "previous_replacement": "01/01/1970"
         },
         {
+          "part_number": "Staple Finisher-AB1:FM2-C175",
+          "part_name": "Staple free stapling counter: Fin-L_AB",
+          "sub_item": "FR-STPL",
+          "current_counter": 0,
+          "part_lifetime": 30000,
+          "life_used_percent": 0,
+          "previous_replacement": "01/01/1970"
+        },
+        {
           "part_number": "Booklet Finisher-AB1:FM2-C175",
           "part_name": "Staple free stapling counter: Fin-L_AB",
           "sub_item": "FR-STPL",
@@ -37574,15 +37583,6 @@
         },
         {
           "part_number": "Inner Finisher:FM2-B760",
-          "part_name": "Staple free stapling counter: Fin-L_AB",
-          "sub_item": "FR-STPL",
-          "current_counter": 0,
-          "part_lifetime": 30000,
-          "life_used_percent": 0,
-          "previous_replacement": "01/01/1970"
-        },
-        {
-          "part_number": "Staple Finisher-AB1:FM2-C175",
           "part_name": "Staple free stapling counter: Fin-L_AB",
           "sub_item": "FR-STPL",
           "current_counter": 0,
@@ -37794,45 +37794,45 @@
           "part_number": "FM1-U032",
           "part_name": "Transfer Roller",
           "sub_item": "TR-ROLL",
-          "current_counter": 164304,
+          "current_counter": 164413,
           "part_lifetime": 225000,
-          "life_used_percent": 73.02,
+          "life_used_percent": 73.07,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM1-U030",
           "part_name": "Cassette 1 Feed Roller",
           "sub_item": "C1-FD-RL",
-          "current_counter": 134416,
+          "current_counter": 134482,
           "part_lifetime": 225000,
-          "life_used_percent": 59.74,
+          "life_used_percent": 59.77,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM1-U030",
           "part_name": "Cassette1 Separation Roller",
           "sub_item": "C1-SP-RL",
-          "current_counter": 134416,
+          "current_counter": 134482,
           "part_lifetime": 225000,
-          "life_used_percent": 59.74,
+          "life_used_percent": 59.77,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "230V:FM1-U028",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
-          "current_counter": 15136,
+          "current_counter": 15245,
           "part_lifetime": 225000,
-          "life_used_percent": 6.73,
+          "life_used_percent": 6.78,
           "previous_replacement": "01/07/2026"
         },
         {
           "part_number": "120V:FM1-U027",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
-          "current_counter": 15136,
+          "current_counter": 15245,
           "part_lifetime": 225000,
-          "life_used_percent": 6.73,
+          "life_used_percent": 6.78,
           "previous_replacement": "01/07/2026"
         },
         {
