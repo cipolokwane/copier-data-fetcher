@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-01T01:00:21.466Z",
+  "generated_at": "2026-10-01T02:00:19.240Z",
   "count": 228,
   "devices": [
     {
@@ -2460,7 +2460,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher:FE3-6957",
+          "part_number": "Staple Finisher:FE3-6957",
           "part_name": "Paddle :Fin-AB",
           "sub_item": "FIN-MPDL",
           "current_counter": 0,
@@ -2469,7 +2469,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Staple Finisher:FE3-6957",
+          "part_number": "Booklet Finisher:FE3-6957",
           "part_name": "Paddle :Fin-AB",
           "sub_item": "FIN-MPDL",
           "current_counter": 0,
@@ -2487,15 +2487,6 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Staple Finisher:FM1-L281",
-          "part_name": "Stapler : Fin-L_AB",
-          "sub_item": "FIN-STPR",
-          "current_counter": 0,
-          "part_lifetime": 500000,
-          "life_used_percent": 0,
-          "previous_replacement": "01/01/1970"
-        },
-        {
           "part_number": "Inner Finisher:FM1-N381",
           "part_name": "Stapler : Fin-L_AB",
           "sub_item": "FIN-STPR",
@@ -2505,11 +2496,11 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher-AB1:FM2-C175",
-          "part_name": "Staple free stapling counter: Fin-L_AB",
-          "sub_item": "FR-STPL",
+          "part_number": "Staple Finisher:FM1-L281",
+          "part_name": "Stapler : Fin-L_AB",
+          "sub_item": "FIN-STPR",
           "current_counter": 0,
-          "part_lifetime": 30000,
+          "part_lifetime": 500000,
           "life_used_percent": 0,
           "previous_replacement": "01/01/1970"
         },
@@ -2524,6 +2515,15 @@
         },
         {
           "part_number": "Staple Finisher-AB1:FM2-C175",
+          "part_name": "Staple free stapling counter: Fin-L_AB",
+          "sub_item": "FR-STPL",
+          "current_counter": 0,
+          "part_lifetime": 30000,
+          "life_used_percent": 0,
+          "previous_replacement": "01/01/1970"
+        },
+        {
+          "part_number": "Booklet Finisher-AB1:FM2-C175",
           "part_name": "Staple free stapling counter: Fin-L_AB",
           "sub_item": "FR-STPL",
           "current_counter": 0,
@@ -7420,7 +7420,7 @@
       "contract_no": "DADAW",
       "contract_start": "2026-08-01",
       "contract_end": "2026-08-01",
-      "last_communication": "30/09/2026 15:28",
+      "last_communication": "01/10/2026 03:28",
       "toner_cartridges": [
         {
           "colour": "B",
@@ -7430,16 +7430,16 @@
       "toner_alarm": "2",
       "parts": [],
       "billing_counters": {
-        "101": 15217,
-        "102": 15217,
-        "104": 15217,
-        "108": 15217,
-        "109": 15217,
-        "113": 15217,
-        "501": 3519
+        "101": 15259,
+        "102": 15259,
+        "104": 15259,
+        "108": 15259,
+        "109": 15259,
+        "113": 15259,
+        "501": 3524
       },
-      "total_counter": 3519,
-      "mono_counter": 15217,
+      "total_counter": 3524,
+      "mono_counter": 15259,
       "colour_counter": null
     },
     {
@@ -11225,7 +11225,7 @@
       "contract_no": "KatekaniSecur",
       "contract_start": "2023-08-01",
       "contract_end": "2023-08-01",
-      "last_communication": "30/09/2026 19:13",
+      "last_communication": "01/10/2026 03:13",
       "toner_cartridges": [
         {
           "colour": "B",
@@ -11280,7 +11280,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "FM1-U027(120V)",
+          "part_number": "FM1-U028(230V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
           "current_counter": 171516,
@@ -11289,7 +11289,7 @@
           "previous_replacement": "31/03/2022"
         },
         {
-          "part_number": "FM1-U028(230V)",
+          "part_number": "FM1-U027(120V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
           "current_counter": 171516,
@@ -11405,7 +11405,7 @@
       "contract_no": "KatekaniSecur",
       "contract_start": "2025-06-01",
       "contract_end": "2025-06-01",
-      "last_communication": "30/09/2026 11:46",
+      "last_communication": "01/10/2026 03:46",
       "toner_cartridges": [
         {
           "colour": "C",
@@ -11851,19 +11851,19 @@
         }
       ],
       "billing_counters": {
-        "101": 35024,
-        "102": 35028,
+        "101": 35029,
+        "102": 35033,
         "103": 4,
-        "104": 35020,
-        "105": 20090,
-        "106": 20094,
-        "108": 14934,
-        "109": 14934,
+        "104": 35025,
+        "105": 20092,
+        "106": 20096,
+        "108": 14937,
+        "109": 14937,
         "112": 0,
-        "113": 14934,
-        "121": 20086,
+        "113": 14937,
+        "121": 20088,
         "122": 4,
-        "123": 20086,
+        "123": 20088,
         "181": 0,
         "182": 0,
         "183": 0,
@@ -11876,7 +11876,7 @@
         "074": 1
       },
       "total_counter": 18999,
-      "mono_counter": 14934,
+      "mono_counter": 14937,
       "colour_counter": 0
     },
     {
@@ -11896,7 +11896,7 @@
       "contract_no": "KatekaniSecur",
       "contract_start": "2023-08-01",
       "contract_end": "2023-08-01",
-      "last_communication": "30/09/2026 11:43",
+      "last_communication": "01/10/2026 03:43",
       "toner_cartridges": [
         {
           "colour": "C",
@@ -12063,19 +12063,19 @@
         }
       ],
       "billing_counters": {
-        "101": 216170,
-        "102": 216170,
+        "101": 216498,
+        "102": 216498,
         "103": 0,
-        "104": 216170,
-        "105": 97844,
-        "106": 97844,
-        "108": 118323,
-        "109": 118323,
+        "104": 216498,
+        "105": 97858,
+        "106": 97858,
+        "108": 118637,
+        "109": 118637,
         "112": 0,
-        "113": 118323,
-        "121": 97844,
+        "113": 118637,
+        "121": 97858,
         "122": 0,
-        "123": 97847,
+        "123": 97861,
         "181": 39,
         "182": 17,
         "183": 43,
@@ -12088,7 +12088,7 @@
         "074": 2
       },
       "total_counter": 61655,
-      "mono_counter": 118323,
+      "mono_counter": 118637,
       "colour_counter": 0
     },
     {
@@ -12586,117 +12586,117 @@
           "part_number": "FM1-A606",
           "part_name": "Waste Toner Container",
           "sub_item": "WST-TNR",
-          "current_counter": 154680,
+          "current_counter": 154777,
           "part_lifetime": 497000,
-          "life_used_percent": 31.12,
+          "life_used_percent": 31.14,
           "previous_replacement": "22/03/2024"
         },
         {
           "part_number": "FL1-B055",
           "part_name": "Secondary Transfer Outer Roller",
           "sub_item": "2TR-ROLL",
-          "current_counter": 44552,
+          "current_counter": 44580,
           "part_lifetime": 240000,
-          "life_used_percent": 18.56,
+          "life_used_percent": 18.58,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM2-H258",
           "part_name": "ITB Unit",
           "sub_item": "TR-UNIT",
-          "current_counter": 44552,
+          "current_counter": 44580,
           "part_lifetime": 240000,
-          "life_used_percent": 18.56,
+          "life_used_percent": 18.58,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM2-G092",
           "part_name": "Developing Unit (Bk)",
           "sub_item": "DV-UNT-K",
-          "current_counter": 44421,
+          "current_counter": 44449,
           "part_lifetime": 240000,
-          "life_used_percent": 18.51,
+          "life_used_percent": 18.52,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM2-H612 (120V)",
           "part_name": "Fixing Unit (120V)",
           "sub_item": "FX-UNIT",
-          "current_counter": 44385,
+          "current_counter": 44413,
           "part_lifetime": 240000,
-          "life_used_percent": 18.49,
+          "life_used_percent": 18.51,
           "previous_replacement": "16/04/2025"
         },
         {
           "part_number": "FM2-H612 (100V)",
           "part_name": "Fixing Unit (100V)",
           "sub_item": "FX-UNIT",
-          "current_counter": 44385,
+          "current_counter": 44413,
           "part_lifetime": 240000,
-          "life_used_percent": 18.49,
+          "life_used_percent": 18.51,
           "previous_replacement": "16/04/2025"
         },
         {
           "part_number": "FM2-H613 (230V)",
           "part_name": "Fixing Unit (230V)",
           "sub_item": "FX-UNIT",
-          "current_counter": 44385,
+          "current_counter": 44413,
           "part_lifetime": 240000,
-          "life_used_percent": 18.49,
+          "life_used_percent": 18.51,
           "previous_replacement": "16/04/2025"
         },
         {
           "part_number": "FM2-G091",
           "part_name": "Developing Unit (C)",
           "sub_item": "DV-UNT-C",
-          "current_counter": 36753,
+          "current_counter": 36776,
           "part_lifetime": 240000,
-          "life_used_percent": 15.31,
+          "life_used_percent": 15.32,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM2-G090",
           "part_name": "Developing Unit (M)",
           "sub_item": "DV-UNT-M",
-          "current_counter": 36753,
+          "current_counter": 36776,
           "part_lifetime": 240000,
-          "life_used_percent": 15.31,
+          "life_used_percent": 15.32,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM2-G089",
           "part_name": "Developing Unit (Y)",
           "sub_item": "DV-UNT-Y",
-          "current_counter": 36753,
+          "current_counter": 36776,
           "part_lifetime": 240000,
-          "life_used_percent": 15.31,
+          "life_used_percent": 15.32,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FL4-0763",
           "part_name": "Cassette 1 Feed Roller",
           "sub_item": "C1-FD-RL",
-          "current_counter": 27608,
+          "current_counter": 27633,
           "part_lifetime": 500000,
-          "life_used_percent": 5.52,
+          "life_used_percent": 5.53,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FL4-0762",
           "part_name": "Cassette 1 Pickup Roller",
           "sub_item": "C1-PU-RL",
-          "current_counter": 27608,
+          "current_counter": 27633,
           "part_lifetime": 500000,
-          "life_used_percent": 5.52,
+          "life_used_percent": 5.53,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FL1-3762",
           "part_name": "Cassette 1 Separation Roller",
           "sub_item": "C1-SP-RL",
-          "current_counter": 27608,
+          "current_counter": 27633,
           "part_lifetime": 500000,
-          "life_used_percent": 5.52,
+          "life_used_percent": 5.53,
           "previous_replacement": "01/01/1970"
         },
         {
@@ -12730,7 +12730,7 @@
           "part_number": "DADF-BA1:FM1-D470",
           "part_name": "Pickup Roller Unit",
           "sub_item": "DF-PU-RL",
-          "current_counter": 772,
+          "current_counter": 774,
           "part_lifetime": 80000,
           "life_used_percent": 0.97,
           "previous_replacement": "01/01/1970"
@@ -12739,7 +12739,7 @@
           "part_number": "DADF-BA1:FM1-D471",
           "part_name": "Separation Roller",
           "sub_item": "DF-SP-RL",
-          "current_counter": 772,
+          "current_counter": 774,
           "part_lifetime": 80000,
           "life_used_percent": 0.97,
           "previous_replacement": "01/01/1970"
@@ -12775,7 +12775,7 @@
           "part_number": "Single Pass DADF-C1:FM1-T417",
           "part_name": "Pickup Roller Unit",
           "sub_item": "DF-PU-RL",
-          "current_counter": 772,
+          "current_counter": 774,
           "part_lifetime": 200000,
           "life_used_percent": 0.39,
           "previous_replacement": "01/01/1970"
@@ -12784,7 +12784,7 @@
           "part_number": "Single Pass DADF-C1:FM1-T423",
           "part_name": "Separation Roller",
           "sub_item": "DF-SP-RL",
-          "current_counter": 772,
+          "current_counter": 774,
           "part_lifetime": 200000,
           "life_used_percent": 0.39,
           "previous_replacement": "01/01/1970"
@@ -12799,7 +12799,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Staple Finisher-AE1:FM1-L281",
+          "part_number": "Inner Finisher-L1:FM1-N381",
           "part_name": "Stapler",
           "sub_item": "FIN-STPR",
           "current_counter": 0,
@@ -12817,7 +12817,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Inner Finisher-L1:FM1-N381",
+          "part_number": "Staple Finisher-AE1:FM1-L281",
           "part_name": "Stapler",
           "sub_item": "FIN-STPR",
           "current_counter": 0,
@@ -12937,7 +12937,7 @@
           "part_number": "8528B",
           "part_name": "Drum Unit (C)",
           "sub_item": "PT-DR-C",
-          "current_counter": 36754,
+          "current_counter": 36777,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "16/04/2025"
@@ -12946,7 +12946,7 @@
           "part_number": "8528B",
           "part_name": "Drum Unit (M)",
           "sub_item": "PT-DR-M",
-          "current_counter": 36754,
+          "current_counter": 36777,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "16/04/2025"
@@ -12955,7 +12955,7 @@
           "part_number": "8528B",
           "part_name": "Drum Unit (Y)",
           "sub_item": "PT-DR-Y",
-          "current_counter": 36231,
+          "current_counter": 36254,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "02/03/2026"
@@ -12964,7 +12964,7 @@
           "part_number": "8528B",
           "part_name": "Drum Unit (Bk)",
           "sub_item": "PT-DRM",
-          "current_counter": 44422,
+          "current_counter": 44450,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "16/04/2025"
@@ -13569,115 +13569,115 @@
           "part_number": "2189C",
           "part_name": "Drum Unit (Y) estimated life value",
           "sub_item": "PT_DR-Y",
-          "current_counter": 148,
+          "current_counter": 149,
           "part_lifetime": 100,
-          "life_used_percent": 148,
+          "life_used_percent": 149,
           "previous_replacement": "22/04/2024"
         },
         {
           "part_number": "2187C",
           "part_name": "Drum Unit (C) estimated life value",
           "sub_item": "PT_DR-C",
-          "current_counter": 129,
+          "current_counter": 130,
           "part_lifetime": 100,
-          "life_used_percent": 129,
+          "life_used_percent": 130,
           "previous_replacement": "22/04/2024"
         },
         {
           "part_number": "2186C",
           "part_name": "Drum Unit (Bk) estimated life value",
           "sub_item": "PT_DRM",
-          "current_counter": 110,
+          "current_counter": 112,
           "part_lifetime": 100,
-          "life_used_percent": 110,
+          "life_used_percent": 112,
           "previous_replacement": "11/09/2025"
         },
         {
           "part_number": "FM1-R725(100V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
-          "current_counter": 127174,
+          "current_counter": 127871,
           "part_lifetime": 150000,
-          "life_used_percent": 84.78,
+          "life_used_percent": 85.25,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM1-R726(120V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
-          "current_counter": 127174,
+          "current_counter": 127871,
           "part_lifetime": 150000,
-          "life_used_percent": 84.78,
+          "life_used_percent": 85.25,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM1-R727(230V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
-          "current_counter": 127174,
+          "current_counter": 127871,
           "part_lifetime": 150000,
-          "life_used_percent": 84.78,
+          "life_used_percent": 85.25,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM1-U036",
           "part_name": "Secondary Transfer Outer Roller",
           "sub_item": "2TR-ROLL",
-          "current_counter": 127107,
+          "current_counter": 127800,
           "part_lifetime": 150000,
-          "life_used_percent": 84.74,
+          "life_used_percent": 85.2,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM1-A153",
           "part_name": "ITB Unit",
           "sub_item": "TR-BLT",
-          "current_counter": 127107,
+          "current_counter": 127800,
           "part_lifetime": 150000,
-          "life_used_percent": 84.74,
-          "previous_replacement": "01/01/1970"
-        },
-        {
-          "part_number": "FM1-W677",
-          "part_name": "ADF Pickup Unit",
-          "sub_item": "DF-PU-RL",
-          "current_counter": 23656,
-          "part_lifetime": 50000,
-          "life_used_percent": 47.31,
-          "previous_replacement": "01/01/1970"
-        },
-        {
-          "part_number": "FM1-W655",
-          "part_name": "ADF Separation Roller Unit",
-          "sub_item": "DF-SP-RL",
-          "current_counter": 23656,
-          "part_lifetime": 50000,
-          "life_used_percent": 47.31,
+          "life_used_percent": 85.2,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM0-0015",
           "part_name": "Waste Toner Container",
           "sub_item": "WST-TNR",
-          "current_counter": 22511,
+          "current_counter": 25190,
           "part_lifetime": 52500,
-          "life_used_percent": 42.88,
+          "life_used_percent": 47.98,
           "previous_replacement": "23/07/2026"
+        },
+        {
+          "part_number": "FM1-W677",
+          "part_name": "ADF Pickup Unit",
+          "sub_item": "DF-PU-RL",
+          "current_counter": 23662,
+          "part_lifetime": 50000,
+          "life_used_percent": 47.32,
+          "previous_replacement": "01/01/1970"
+        },
+        {
+          "part_number": "FM1-W655",
+          "part_name": "ADF Separation Roller Unit",
+          "sub_item": "DF-SP-RL",
+          "current_counter": 23662,
+          "part_lifetime": 50000,
+          "life_used_percent": 47.32,
+          "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "2188C",
           "part_name": "Drum Unit (M) estimated life value",
           "sub_item": "PT_DR-M",
-          "current_counter": 21,
+          "current_counter": 23,
           "part_lifetime": 100,
-          "life_used_percent": 21,
+          "life_used_percent": 23,
           "previous_replacement": "23/03/2026"
         },
         {
           "part_number": "2187C",
           "part_name": "Drum Unit (C)",
           "sub_item": "PT-DR-C",
-          "current_counter": 63511,
+          "current_counter": 64173,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "22/04/2024"
@@ -13686,7 +13686,7 @@
           "part_number": "2188C",
           "part_name": "Drum Unit (M)",
           "sub_item": "PT-DR-M",
-          "current_counter": 9612,
+          "current_counter": 10274,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "23/03/2026"
@@ -13695,7 +13695,7 @@
           "part_number": "2189C",
           "part_name": "Drum Unit (Y)",
           "sub_item": "PT-DR-Y",
-          "current_counter": 63511,
+          "current_counter": 64173,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "22/04/2024"
@@ -13704,7 +13704,7 @@
           "part_number": "2186C",
           "part_name": "Drum Unit (Bk)",
           "sub_item": "PT-DRM",
-          "current_counter": 55135,
+          "current_counter": 55828,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "11/09/2025"
@@ -17283,7 +17283,7 @@
       "contract_no": "Maphungubye",
       "contract_start": "2023-08-01",
       "contract_end": "2028-08-01",
-      "last_communication": "30/09/2026 11:02",
+      "last_communication": "01/10/2026 03:02",
       "toner_cartridges": [
         {
           "colour": "M",
@@ -17396,28 +17396,28 @@
         }
       ],
       "billing_counters": {
-        "101": 125339,
-        "102": 125339,
-        "104": 125339,
-        "105": 53849,
-        "106": 53849,
-        "108": 71490,
-        "109": 71490,
-        "113": 71490,
-        "121": 53849,
-        "123": 53849,
+        "101": 125420,
+        "102": 125420,
+        "104": 125420,
+        "105": 53899,
+        "106": 53899,
+        "108": 71521,
+        "109": 71521,
+        "113": 71521,
+        "121": 53899,
+        "123": 53899,
         "181": 0,
         "182": 0,
         "183": 1,
         "184": 0,
-        "501": 76970,
+        "501": 77009,
         "071": 4,
         "072": 3,
         "073": 4,
         "074": 3
       },
-      "total_counter": 76970,
-      "mono_counter": 71490,
+      "total_counter": 77009,
+      "mono_counter": 71521,
       "colour_counter": null
     },
     {
@@ -23981,7 +23981,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Staple Finisher-AE1:FM1-L281",
+          "part_number": "Booklet Finisher-AE1:FM1-L281",
           "part_name": "Stapler : Fin-L_AE",
           "sub_item": "FIN-STPR",
           "current_counter": 0,
@@ -23999,7 +23999,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher-AE1:FM1-L281",
+          "part_number": "Staple Finisher-AE1:FM1-L281",
           "part_name": "Stapler : Fin-L_AE",
           "sub_item": "FIN-STPR",
           "current_counter": 0,
@@ -24044,7 +24044,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher-AE1:FE3-9778",
+          "part_number": "Staple Finisher-AE1:FE3-9778",
           "part_name": "Tray Torq Limt pts cntr:Fin-AE",
           "sub_item": "TRY-TQLM",
           "current_counter": 0,
@@ -24053,7 +24053,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Staple Finisher-AE1:FE3-9778",
+          "part_number": "Booklet Finisher-AE1:FE3-9778",
           "part_name": "Tray Torq Limt pts cntr:Fin-AE",
           "sub_item": "TRY-TQLM",
           "current_counter": 0,
@@ -24732,7 +24732,7 @@
       "contract_no": "NPCC",
       "contract_start": "2023-08-01",
       "contract_end": "2023-08-01",
-      "last_communication": "30/09/2026 11:05",
+      "last_communication": "01/10/2026 03:05",
       "toner_cartridges": [
         {
           "colour": "C",
@@ -24899,16 +24899,16 @@
         }
       ],
       "billing_counters": {
-        "101": 184651,
-        "102": 184651,
+        "101": 184709,
+        "102": 184709,
         "103": 0,
-        "104": 184651,
+        "104": 184709,
         "105": 102354,
         "106": 102354,
-        "108": 82297,
-        "109": 82297,
+        "108": 82355,
+        "109": 82355,
         "112": 0,
-        "113": 82297,
+        "113": 82355,
         "121": 102354,
         "122": 0,
         "123": 102354,
@@ -24916,15 +24916,15 @@
         "182": 1,
         "183": 1,
         "184": 0,
-        "501": 38473,
+        "501": 38479,
         "064": 0,
         "071": 5,
         "072": 3,
         "073": 3,
         "074": 3
       },
-      "total_counter": 38473,
-      "mono_counter": 82297,
+      "total_counter": 38479,
+      "mono_counter": 82355,
       "colour_counter": 0
     },
     {
@@ -28867,7 +28867,7 @@
           "part_number": "FM4-9859",
           "part_name": "ADF Pickup Unit",
           "sub_item": "DF-PU-RL",
-          "current_counter": 188350,
+          "current_counter": 188352,
           "part_lifetime": 50000,
           "life_used_percent": 376.7,
           "previous_replacement": "31/01/1970"
@@ -28876,7 +28876,7 @@
           "part_number": "FM4-9857",
           "part_name": "Separation Pad",
           "sub_item": "DF-SP-PD",
-          "current_counter": 188350,
+          "current_counter": 188352,
           "part_lifetime": 50000,
           "life_used_percent": 376.7,
           "previous_replacement": "31/01/1970"
@@ -28885,43 +28885,43 @@
           "part_number": "FM1-C318",
           "part_name": "Secondary TransferOuter Roller",
           "sub_item": "2TR-ROLL",
-          "current_counter": 261543,
+          "current_counter": 261785,
           "part_lifetime": 150000,
-          "life_used_percent": 174.36,
+          "life_used_percent": 174.52,
           "previous_replacement": "31/01/1970"
         },
         {
           "part_number": "FM1-A153",
           "part_name": "ITB Unit",
           "sub_item": "TR-BLT",
-          "current_counter": 261543,
+          "current_counter": 261785,
           "part_lifetime": 150000,
-          "life_used_percent": 174.36,
+          "life_used_percent": 174.52,
           "previous_replacement": "31/01/1970"
         },
         {
           "part_number": "FM0-0033(100V)FM0-0072(120V)FM0-0073(230V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
-          "current_counter": 240432,
+          "current_counter": 240658,
           "part_lifetime": 150000,
-          "life_used_percent": 160.29,
+          "life_used_percent": 160.44,
           "previous_replacement": "31/01/1970"
         },
         {
           "part_number": "FM0-0015",
           "part_name": "Waste Toner Container",
           "sub_item": "WST-TNR",
-          "current_counter": 19675,
+          "current_counter": 20293,
           "part_lifetime": 57000,
-          "life_used_percent": 34.52,
+          "life_used_percent": 35.6,
           "previous_replacement": "01/12/2025"
         },
         {
           "part_number": "8521B",
           "part_name": "C Drum Unit",
           "sub_item": "PT-DR-C",
-          "current_counter": 7216,
+          "current_counter": 7338,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "16/10/2025"
@@ -28930,7 +28930,7 @@
           "part_number": "8522B",
           "part_name": "M Drum Unit",
           "sub_item": "PT-DR-M",
-          "current_counter": 38571,
+          "current_counter": 38693,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "11/09/2024"
@@ -28939,7 +28939,7 @@
           "part_number": "8523B",
           "part_name": "Y Drum Unit",
           "sub_item": "PT-DR-Y",
-          "current_counter": 14134,
+          "current_counter": 14256,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "29/08/2025"
@@ -28948,7 +28948,7 @@
           "part_number": "8520B",
           "part_name": "Bk Drum Unit",
           "sub_item": "PT-DRM",
-          "current_counter": 15798,
+          "current_counter": 16024,
           "part_lifetime": 9999999999,
           "life_used_percent": 0,
           "previous_replacement": "13/11/2025"
@@ -29021,36 +29021,36 @@
           "part_number": "FM1-M435",
           "part_name": "Waste Toner Container",
           "sub_item": "WST-TNR",
-          "current_counter": 183730,
+          "current_counter": 183770,
           "part_lifetime": 54000,
-          "life_used_percent": 340.24,
+          "life_used_percent": 340.31,
           "previous_replacement": "27/05/2025"
         },
         {
           "part_number": "FM1-W677",
           "part_name": "ADF Pickup Unit : DADF",
           "sub_item": "DF-PU-RL",
-          "current_counter": 90096,
+          "current_counter": 90751,
           "part_lifetime": 50000,
-          "life_used_percent": 180.19,
+          "life_used_percent": 181.5,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM1-W655",
           "part_name": "Separation Roller : DADF",
           "sub_item": "DF-SP-RL",
-          "current_counter": 90096,
+          "current_counter": 90751,
           "part_lifetime": 50000,
-          "life_used_percent": 180.19,
+          "life_used_percent": 181.5,
           "previous_replacement": "01/01/1970"
         },
         {
           "part_number": "FM1-M725",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
-          "current_counter": 125820,
+          "current_counter": 125851,
           "part_lifetime": 200000,
-          "life_used_percent": 62.91,
+          "life_used_percent": 62.93,
           "previous_replacement": "01/01/1970"
         }
       ],
@@ -29815,7 +29815,7 @@
       "contract_no": "PREMJEE",
       "contract_start": "2023-08-01",
       "contract_end": "2023-08-01",
-      "last_communication": "30/09/2026 11:01",
+      "last_communication": "01/10/2026 03:01",
       "toner_cartridges": [
         {
           "colour": "B",
@@ -29825,16 +29825,16 @@
       "toner_alarm": "1",
       "parts": [],
       "billing_counters": {
-        "101": 53695,
-        "102": 53695,
-        "104": 53695,
-        "108": 53695,
-        "109": 53695,
-        "113": 53695,
+        "101": 53701,
+        "102": 53701,
+        "104": 53701,
+        "108": 53701,
+        "109": 53701,
+        "113": 53701,
         "501": 6950
       },
       "total_counter": 6950,
-      "mono_counter": 53695,
+      "mono_counter": 53701,
       "colour_counter": null
     },
     {
@@ -32122,7 +32122,7 @@
       "contract_no": "SasolBendor",
       "contract_start": "2023-08-01",
       "contract_end": "2023-08-01",
-      "last_communication": "30/09/2026 11:37",
+      "last_communication": "01/10/2026 03:37",
       "toner_cartridges": [
         {
           "colour": "M",
@@ -32235,16 +32235,16 @@
         }
       ],
       "billing_counters": {
-        "101": 46767,
-        "102": 46767,
-        "104": 46767,
-        "105": 16110,
-        "106": 16110,
-        "108": 30657,
-        "109": 30657,
-        "113": 30657,
-        "121": 16110,
-        "123": 16110,
+        "101": 46784,
+        "102": 46784,
+        "104": 46784,
+        "105": 16111,
+        "106": 16111,
+        "108": 30673,
+        "109": 30673,
+        "113": 30673,
+        "121": 16111,
+        "123": 16111,
         "181": 4,
         "182": 7,
         "183": 0,
@@ -32256,7 +32256,7 @@
         "074": 2
       },
       "total_counter": 7726,
-      "mono_counter": 30657,
+      "mono_counter": 30673,
       "colour_counter": null
     },
     {
@@ -34859,7 +34859,7 @@
           "previous_replacement": "21/07/2026"
         },
         {
-          "part_number": "FM1-R727(230V)",
+          "part_number": "FM1-R725(100V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
           "current_counter": 4452,
@@ -34868,7 +34868,7 @@
           "previous_replacement": "21/07/2026"
         },
         {
-          "part_number": "FM1-R725(100V)",
+          "part_number": "FM1-R727(230V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
           "current_counter": 4452,
@@ -35829,7 +35829,7 @@
       "contract_no": "TychogynBrick",
       "contract_start": "2023-08-01",
       "contract_end": "2023-08-01",
-      "last_communication": "30/09/2026 11:06",
+      "last_communication": "01/10/2026 03:06",
       "toner_cartridges": [
         {
           "colour": "B",
@@ -35975,21 +35975,21 @@
         }
       ],
       "billing_counters": {
-        "101": 151998,
-        "102": 151998,
+        "101": 152234,
+        "102": 152234,
         "103": 0,
-        "104": 151998,
-        "108": 151998,
-        "109": 151998,
+        "104": 152234,
+        "108": 152234,
+        "109": 152234,
         "112": 0,
-        "113": 151998,
+        "113": 152234,
         "181": 0,
-        "501": 46109,
+        "501": 46172,
         "064": 3,
         "071": 4
       },
-      "total_counter": 46109,
-      "mono_counter": 151998,
+      "total_counter": 46172,
+      "mono_counter": 152234,
       "colour_counter": 0
     },
     {
