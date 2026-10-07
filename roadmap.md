@@ -1,6 +1,6 @@
 # Roadmap
 
-- [ ] GitHub CSVs stopped updating Oct 4: GitHub token rejected (expired/revoked) — waiting on a new token. Cron timeout already fixed.
+- [x] GitHub CSVs stopped updating Oct 4: token expired + cron timeout — both fixed.
 - [ ] Reset the Microsoft Outlook connector so the correct work mailbox can be connected from scratch.
 - [ ] Clear the saved Microsoft browser session, then reconnect Outlook from scratch as sales1@telnetoffice.co.za.
 - [ ] Read emails from telnetscans@gmail.com, inspect the two HTML attachments, and agree the CSV columns.
