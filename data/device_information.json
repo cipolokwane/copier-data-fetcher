@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-16T16:00:19.456Z",
+  "generated_at": "2026-10-16T17:00:19.193Z",
   "count": 231,
   "devices": [
     {
@@ -216,7 +216,7 @@
       "contract_no": "AfricanSpirit",
       "contract_start": "2024-05-01",
       "contract_end": "2024-05-01",
-      "last_communication": "16/10/2026 02:25",
+      "last_communication": "16/10/2026 18:25",
       "toner_cartridges": [
         {
           "colour": "B",
@@ -3874,15 +3874,6 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "FM2-H613 (230V)",
-          "part_name": "Fixing Unit (230V)",
-          "sub_item": "FX-UNIT",
-          "current_counter": 177173,
-          "part_lifetime": 240000,
-          "life_used_percent": 73.82,
-          "previous_replacement": "24/04/2024"
-        },
-        {
           "part_number": "FM2-H612 (120V)",
           "part_name": "Fixing Unit (120V)",
           "sub_item": "FX-UNIT",
@@ -3894,6 +3885,15 @@
         {
           "part_number": "FM2-H612 (100V)",
           "part_name": "Fixing Unit (100V)",
+          "sub_item": "FX-UNIT",
+          "current_counter": 177173,
+          "part_lifetime": 240000,
+          "life_used_percent": 73.82,
+          "previous_replacement": "24/04/2024"
+        },
+        {
+          "part_number": "FM2-H613 (230V)",
+          "part_name": "Fixing Unit (230V)",
           "sub_item": "FX-UNIT",
           "current_counter": 177173,
           "part_lifetime": 240000,
@@ -4036,15 +4036,6 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher-AE1:FM1-L281",
-          "part_name": "Stapler",
-          "sub_item": "FIN-STPR",
-          "current_counter": 0,
-          "part_lifetime": 500000,
-          "life_used_percent": 0,
-          "previous_replacement": "01/01/1970"
-        },
-        {
           "part_number": "Staple Finisher-AE1:FM1-L281",
           "part_name": "Stapler",
           "sub_item": "FIN-STPR",
@@ -4063,7 +4054,16 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Inner Finisher-L1:FM2-B760",
+          "part_number": "Booklet Finisher-AE1:FM1-L281",
+          "part_name": "Stapler",
+          "sub_item": "FIN-STPR",
+          "current_counter": 0,
+          "part_lifetime": 500000,
+          "life_used_percent": 0,
+          "previous_replacement": "01/01/1970"
+        },
+        {
+          "part_number": "Booklet Finisher-AE1:FM2-C175",
           "part_name": "Staple-free Staple Unit",
           "sub_item": "FR-STPL",
           "current_counter": 0,
@@ -4072,7 +4072,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher-AE1:FM2-C175",
+          "part_number": "Inner Finisher-L1:FM2-B760",
           "part_name": "Staple-free Staple Unit",
           "sub_item": "FR-STPL",
           "current_counter": 0,
@@ -4099,7 +4099,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher-AE1:FE3-9778",
+          "part_number": "Staple Finisher-AE1:FE3-9778",
           "part_name": "Stacking Tray Torque Limiter",
           "sub_item": "TRY-TQLM",
           "current_counter": 0,
@@ -4108,7 +4108,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Staple Finisher-AE1:FE3-9778",
+          "part_number": "Booklet Finisher-AE1:FE3-9778",
           "part_name": "Stacking Tray Torque Limiter",
           "sub_item": "TRY-TQLM",
           "current_counter": 0,
@@ -8917,7 +8917,7 @@
       "contract_no": "SparCC",
       "contract_start": "2026-04-01",
       "contract_end": "2026-04-01",
-      "last_communication": "16/10/2026 07:29",
+      "last_communication": "16/10/2026 18:35",
       "toner_cartridges": [
         {
           "colour": "B",
@@ -8946,16 +8946,16 @@
         }
       ],
       "billing_counters": {
-        "101": 10996,
-        "102": 10996,
-        "104": 10996,
-        "108": 10996,
-        "109": 10996,
-        "113": 10996,
-        "501": 4156
+        "101": 11039,
+        "102": 11039,
+        "104": 11039,
+        "108": 11039,
+        "109": 11039,
+        "113": 11039,
+        "501": 4169
       },
-      "total_counter": 4156,
-      "mono_counter": 10996,
+      "total_counter": 4169,
+      "mono_counter": 11039,
       "colour_counter": null
     },
     {
@@ -13544,7 +13544,7 @@
       "contract_no": "LimpopoTaxi",
       "contract_start": "2024-06-01",
       "contract_end": "2024-06-01",
-      "last_communication": "16/10/2026 02:25",
+      "last_communication": "16/10/2026 18:25",
       "toner_cartridges": [
         {
           "colour": "C",
@@ -13711,32 +13711,32 @@
         }
       ],
       "billing_counters": {
-        "101": 129512,
-        "102": 129512,
+        "101": 129579,
+        "102": 129579,
         "103": 0,
-        "104": 129512,
-        "105": 65522,
-        "106": 65522,
-        "108": 63987,
-        "109": 63987,
+        "104": 129579,
+        "105": 65544,
+        "106": 65544,
+        "108": 64032,
+        "109": 64032,
         "112": 0,
-        "113": 63987,
-        "121": 65522,
+        "113": 64032,
+        "121": 65544,
         "122": 0,
-        "123": 65525,
+        "123": 65547,
         "181": 2,
         "182": 2,
         "183": 1,
         "184": 1,
-        "501": 28690,
+        "501": 28698,
         "064": 1,
         "071": 4,
         "072": 2,
         "073": 3,
         "074": 2
       },
-      "total_counter": 28690,
-      "mono_counter": 63987,
+      "total_counter": 28698,
+      "mono_counter": 64032,
       "colour_counter": 0
     },
     {
@@ -14381,7 +14381,7 @@
       "contract_no": "Macgyver",
       "contract_start": "2023-08-01",
       "contract_end": "2023-08-01",
-      "last_communication": "16/10/2026 02:56",
+      "last_communication": "16/10/2026 18:56",
       "toner_cartridges": [
         {
           "colour": "B",
@@ -14391,16 +14391,16 @@
       "toner_alarm": "1",
       "parts": [],
       "billing_counters": {
-        "101": 57432,
-        "102": 57432,
-        "104": 57432,
-        "108": 57432,
-        "109": 57432,
-        "113": 57432,
-        "501": 20019
+        "101": 57536,
+        "102": 57536,
+        "104": 57536,
+        "108": 57536,
+        "109": 57536,
+        "113": 57536,
+        "501": 20057
       },
-      "total_counter": 20019,
-      "mono_counter": 57432,
+      "total_counter": 20057,
+      "mono_counter": 57536,
       "colour_counter": null
     },
     {
@@ -16399,7 +16399,7 @@
       "contract_no": "MalokaMachaba",
       "contract_start": "2024-11-01",
       "contract_end": "2024-11-01",
-      "last_communication": "16/10/2026 02:30",
+      "last_communication": "16/10/2026 18:30",
       "toner_cartridges": [
         {
           "colour": "C",
@@ -24123,15 +24123,6 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "FM2-B739(100V)",
-          "part_name": "Fixing Unit (100V)",
-          "sub_item": "FX-UNIT",
-          "current_counter": 338882,
-          "part_lifetime": 240000,
-          "life_used_percent": 141.2,
-          "previous_replacement": "30/07/2022"
-        },
-        {
           "part_number": "FM1-Y640(230V)",
           "part_name": "Fixing Unit (230V)",
           "sub_item": "FX-UNIT",
@@ -24143,6 +24134,15 @@
         {
           "part_number": "FM2-B739(120V)",
           "part_name": "Fixing Unit (120V)",
+          "sub_item": "FX-UNIT",
+          "current_counter": 338882,
+          "part_lifetime": 240000,
+          "life_used_percent": 141.2,
+          "previous_replacement": "30/07/2022"
+        },
+        {
+          "part_number": "FM2-B739(100V)",
+          "part_name": "Fixing Unit (100V)",
           "sub_item": "FX-UNIT",
           "current_counter": 338882,
           "part_lifetime": 240000,
@@ -24312,7 +24312,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Inner Finisher-L1:FM1-N381",
+          "part_number": "Booklet Finisher-AE1:FM1-L281",
           "part_name": "Stapler : Fin-L_AE",
           "sub_item": "FIN-STPR",
           "current_counter": 0,
@@ -24321,7 +24321,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher-AE1:FM1-L281",
+          "part_number": "Inner Finisher-L1:FM1-N381",
           "part_name": "Stapler : Fin-L_AE",
           "sub_item": "FIN-STPR",
           "current_counter": 0,
@@ -24339,7 +24339,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher-AE1:FM2-C175",
+          "part_number": "Inner Finisher-L1:FM2-B760",
           "part_name": "Staple free stapling counter: Fin-L_AE",
           "sub_item": "FR-STPL",
           "current_counter": 0,
@@ -24348,7 +24348,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Inner Finisher-L1:FM2-B760",
+          "part_number": "Booklet Finisher-AE1:FM2-C175",
           "part_name": "Staple free stapling counter: Fin-L_AE",
           "sub_item": "FR-STPL",
           "current_counter": 0,
@@ -24375,7 +24375,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Staple Finisher-AE1:FE3-9778",
+          "part_number": "Booklet Finisher-AE1:FE3-9778",
           "part_name": "Tray Torq Limt pts cntr:Fin-AE",
           "sub_item": "TRY-TQLM",
           "current_counter": 0,
@@ -24384,7 +24384,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "Booklet Finisher-AE1:FE3-9778",
+          "part_number": "Staple Finisher-AE1:FE3-9778",
           "part_name": "Tray Torq Limt pts cntr:Fin-AE",
           "sub_item": "TRY-TQLM",
           "current_counter": 0,
@@ -25404,7 +25404,7 @@
       "contract_no": "NTSHIZAS",
       "contract_start": "2026-06-01",
       "contract_end": "2026-06-01",
-      "last_communication": "16/10/2026 02:29",
+      "last_communication": "16/10/2026 18:29",
       "toner_cartridges": [
         {
           "colour": "C",
@@ -26021,32 +26021,32 @@
         }
       ],
       "billing_counters": {
-        "101": 705099,
-        "102": 707049,
+        "101": 705335,
+        "102": 707285,
         "103": 1950,
-        "104": 703149,
-        "105": 340733,
-        "106": 342549,
-        "108": 364366,
-        "109": 364500,
+        "104": 703385,
+        "105": 340885,
+        "106": 342701,
+        "108": 364450,
+        "109": 364584,
         "112": 134,
-        "113": 364232,
-        "121": 338917,
+        "113": 364316,
+        "121": 339069,
         "122": 1816,
-        "123": 338917,
+        "123": 339069,
         "181": 56,
         "182": 42,
         "183": 66,
         "184": 65,
-        "501": 67243,
+        "501": 67416,
         "064": 0,
         "071": 8,
         "072": 5,
         "073": 4,
         "074": 4
       },
-      "total_counter": 67243,
-      "mono_counter": 364232,
+      "total_counter": 67416,
+      "mono_counter": 364316,
       "colour_counter": 134
     },
     {
@@ -28219,7 +28219,7 @@
       "contract_no": "PHUMZILE",
       "contract_start": "2026-05-01",
       "contract_end": "2026-05-01",
-      "last_communication": "16/10/2026 06:53",
+      "last_communication": "16/10/2026 18:53",
       "toner_cartridges": [
         {
           "colour": "C",
@@ -28665,32 +28665,32 @@
         }
       ],
       "billing_counters": {
-        "101": 8023,
-        "102": 8027,
+        "101": 8074,
+        "102": 8078,
         "103": 4,
-        "104": 8019,
-        "105": 4281,
-        "106": 4285,
-        "108": 3742,
-        "109": 3742,
+        "104": 8070,
+        "105": 4311,
+        "106": 4315,
+        "108": 3763,
+        "109": 3763,
         "112": 0,
-        "113": 3742,
-        "121": 4277,
+        "113": 3763,
+        "121": 4307,
         "122": 4,
-        "123": 4277,
+        "123": 4307,
         "181": 0,
         "182": 0,
         "183": 0,
         "184": 0,
-        "501": 1906,
+        "501": 1907,
         "064": 0,
         "071": 1,
         "072": 1,
         "073": 1,
         "074": 1
       },
-      "total_counter": 1906,
-      "mono_counter": 3742,
+      "total_counter": 1907,
+      "mono_counter": 3763,
       "colour_counter": 0
     },
     {
@@ -30813,7 +30813,7 @@
       "contract_no": "ProtectorLegal",
       "contract_start": "2024-08-01",
       "contract_end": "2024-08-01",
-      "last_communication": "16/10/2026 02:24",
+      "last_communication": "16/10/2026 18:24",
       "toner_cartridges": [
         {
           "colour": "B",
@@ -30823,16 +30823,16 @@
       "toner_alarm": "1",
       "parts": [],
       "billing_counters": {
-        "101": 38339,
-        "102": 38339,
-        "104": 38339,
-        "108": 38339,
-        "109": 38339,
-        "113": 38339,
-        "501": 6846
+        "101": 38366,
+        "102": 38366,
+        "104": 38366,
+        "108": 38366,
+        "109": 38366,
+        "113": 38366,
+        "501": 6856
       },
-      "total_counter": 6846,
-      "mono_counter": 38339,
+      "total_counter": 6856,
+      "mono_counter": 38366,
       "colour_counter": null
     },
     {
@@ -35233,7 +35233,7 @@
           "previous_replacement": "21/07/2026"
         },
         {
-          "part_number": "FM1-R727(230V)",
+          "part_number": "FM1-R725(100V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
           "current_counter": 6124,
@@ -35242,7 +35242,7 @@
           "previous_replacement": "21/07/2026"
         },
         {
-          "part_number": "FM1-R725(100V)",
+          "part_number": "FM1-R727(230V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
           "current_counter": 6124,
@@ -36231,7 +36231,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "FM1-U027(120V)",
+          "part_number": "FM1-U028(230V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
           "current_counter": 154328,
@@ -36240,7 +36240,7 @@
           "previous_replacement": "01/01/1970"
         },
         {
-          "part_number": "FM1-U028(230V)",
+          "part_number": "FM1-U027(120V)",
           "part_name": "Fixing Assembly",
           "sub_item": "FX-UNIT",
           "current_counter": 154328,
@@ -38428,7 +38428,7 @@
       "contract_no": "Xtraparts",
       "contract_start": "2026-09-01",
       "contract_end": "2026-09-01",
-      "last_communication": "16/10/2026 08:15",
+      "last_communication": "16/10/2026 18:16",
       "toner_cartridges": [
         {
           "colour": "C",
@@ -38901,32 +38901,32 @@
         }
       ],
       "billing_counters": {
-        "101": 254,
-        "102": 256,
+        "101": 323,
+        "102": 325,
         "103": 2,
-        "104": 252,
-        "105": 97,
-        "106": 99,
-        "108": 157,
-        "109": 157,
+        "104": 321,
+        "105": 163,
+        "106": 165,
+        "108": 160,
+        "109": 160,
         "112": 0,
-        "113": 157,
-        "121": 95,
+        "113": 160,
+        "121": 161,
         "122": 2,
-        "123": 95,
+        "123": 161,
         "181": 0,
         "182": 0,
         "183": 0,
         "184": 0,
-        "501": 8,
+        "501": 10,
         "064": 0,
         "071": 1,
         "072": 1,
         "073": 1,
         "074": 1
       },
-      "total_counter": 8,
-      "mono_counter": 157,
+      "total_counter": 10,
+      "mono_counter": 160,
       "colour_counter": 0
     },
     {
