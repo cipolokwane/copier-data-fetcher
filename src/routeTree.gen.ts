@@ -12,6 +12,7 @@ import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ApiReferenceRouteImport } from './routes/api-reference'
 import { Route as SettingsRouteImport } from './routes/settings'
+import { Route as SnapshotsRouteImport } from './routes/snapshots'
 import { Route as ApiPublicDailyReportRouteImport } from './routes/api/public/daily-report'
 import { Route as ApiPublicPublishMetersRouteImport } from './routes/api/public/publish-meters'
 
@@ -30,6 +31,11 @@ const SettingsRoute = SettingsRouteImport.update({
   path: '/settings',
   getParentRoute: () => rootRouteImport,
 } as any)
+const SnapshotsRoute = SnapshotsRouteImport.update({
+  id: '/snapshots',
+  path: '/snapshots',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ApiPublicDailyReportRoute = ApiPublicDailyReportRouteImport.update({
   id: '/api/public/daily-report',
   path: '/api/public/daily-report',
@@ -45,6 +51,7 @@ export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/api-reference': typeof ApiReferenceRoute
   '/settings': typeof SettingsRoute
+  '/snapshots': typeof SnapshotsRoute
   '/api/public/daily-report': typeof ApiPublicDailyReportRoute
   '/api/public/publish-meters': typeof ApiPublicPublishMetersRoute
 }
@@ -52,6 +59,7 @@ export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/api-reference': typeof ApiReferenceRoute
   '/settings': typeof SettingsRoute
+  '/snapshots': typeof SnapshotsRoute
   '/api/public/daily-report': typeof ApiPublicDailyReportRoute
   '/api/public/publish-meters': typeof ApiPublicPublishMetersRoute
 }
@@ -60,6 +68,7 @@ export interface FileRoutesById {
   '/': typeof IndexRoute
   '/api-reference': typeof ApiReferenceRoute
   '/settings': typeof SettingsRoute
+  '/snapshots': typeof SnapshotsRoute
   '/api/public/daily-report': typeof ApiPublicDailyReportRoute
   '/api/public/publish-meters': typeof ApiPublicPublishMetersRoute
 }
@@ -69,6 +78,7 @@ export interface FileRouteTypes {
     | '/'
     | '/api-reference'
     | '/settings'
+    | '/snapshots'
     | '/api/public/daily-report'
     | '/api/public/publish-meters'
   fileRoutesByTo: FileRoutesByTo
@@ -76,6 +86,7 @@ export interface FileRouteTypes {
     | '/'
     | '/api-reference'
     | '/settings'
+    | '/snapshots'
     | '/api/public/daily-report'
     | '/api/public/publish-meters'
   id:
@@ -83,6 +94,7 @@ export interface FileRouteTypes {
     | '/'
     | '/api-reference'
     | '/settings'
+    | '/snapshots'
     | '/api/public/daily-report'
     | '/api/public/publish-meters'
   fileRoutesById: FileRoutesById
@@ -91,6 +103,7 @@ export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ApiReferenceRoute: typeof ApiReferenceRoute
   SettingsRoute: typeof SettingsRoute
+  SnapshotsRoute: typeof SnapshotsRoute
   ApiPublicDailyReportRoute: typeof ApiPublicDailyReportRoute
   ApiPublicPublishMetersRoute: typeof ApiPublicPublishMetersRoute
 }
@@ -118,6 +131,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SettingsRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/snapshots': {
+      id: '/snapshots'
+      path: '/snapshots'
+      fullPath: '/snapshots'
+      preLoaderRoute: typeof SnapshotsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/api/public/daily-report': {
       id: '/api/public/daily-report'
       path: '/api/public/daily-report'
@@ -139,6 +159,7 @@ const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ApiReferenceRoute: ApiReferenceRoute,
   SettingsRoute: SettingsRoute,
+  SnapshotsRoute: SnapshotsRoute,
   ApiPublicDailyReportRoute: ApiPublicDailyReportRoute,
   ApiPublicPublishMetersRoute: ApiPublicPublishMetersRoute,
 }
