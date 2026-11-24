@@ -161,6 +161,19 @@ type MeterRow = {
   meterReadings: { counterId: string; value: number }[];
 };
 
+export function readMeterSummary(
+  meters: Record<string, number>,
+): Pick<CanonDevice, "totalCounter" | "bwCounter" | "colorCounter" | "copyBw" | "copyColor"> {
+  const read = (id: string) => meters[id] ?? null;
+  return {
+    totalCounter: read("101"),
+    bwCounter: read("113"),
+    colorCounter: read("112"),
+    copyBw: read("123"),
+    copyColor: read("122"),
+  };
+}
+
 export async function fetchCanonDevices(): Promise<{
   devices: CanonDevice[];
   distributorName: string | null;
@@ -211,7 +224,7 @@ export async function fetchCanonDevices(): Promise<{
     const meter = meterByDevice.get(row.deviceUniqueId);
     const meters: Record<string, number> = {};
     for (const reading of meter?.meterReadings ?? []) meters[reading.counterId] = reading.value;
-    const pick = (id: string) => (id in meters ? meters[id]! : null);
+    const summary = readMeterSummary(meters);
     return {
       serialNo: row.deviceSerialNo,
       model: row.merchandiseName ?? "—",
@@ -224,11 +237,7 @@ export async function fetchCanonDevices(): Promise<{
       color: row.colorPPM > 0,
       installDate: meter?.installDate ?? null,
       lastReceived: meter?.receiveLocalDateTime || null,
-      totalCounter: pick("501"),
-      bwCounter: pick("113"),
-      colorCounter: pick("112"),
-      copyBw: pick("123"),
-      copyColor: pick("122"),
+      ...summary,
       meters,
     };
   });

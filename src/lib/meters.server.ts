@@ -72,7 +72,7 @@ export function buildMeterRows(devices: CanonDevice[], fetchedAt: string): Meter
       a4_colour: Math.max(0, colourTotal - a3Colour),
       a3_mono: a3Mono,
       a3_colour: a3Colour,
-      scans: pick(m, "071", "064", "072"),
+      scans: pick(m, "501", "502"),
       reading_date: isoDate(device.lastReceived, fallbackDate),
     });
   }

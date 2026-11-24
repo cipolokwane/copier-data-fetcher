@@ -89,7 +89,8 @@ const ENDPOINTS: {
 ];
 
 const COUNTERS: { id: string; label: string }[] = [
-  { id: "501", label: "Total (all prints)" },
+  { id: "101", label: "Total 1 (print + copy)" },
+  { id: "501", label: "Scan total 1" },
   { id: "112", label: "Colour total" },
   { id: "113", label: "Black & white total" },
   { id: "122", label: "Copy — colour" },
@@ -142,7 +143,7 @@ METER_TOKEN=$(curl -sS -b jar.txt -c jar.txt -X POST \\
 curl -sS -b jar.txt -H "Authorization: Bearer $METER_TOKEN" \\
   -H 'Content-Type: application/json' \\
   -X POST 'https://rcm-ec1.srv.ygles.com/v1/meter-readings/billing-meter?filterBy=distributorTenantId&filterValue=611CC&filterSubValue=&distributorTenantId=611CC&perPage=100&page=1&isAsync=true' \\
-  -d '{"searchOptions":[{"counterId":"501"},{"counterId":"113"},{"counterId":"112"}]}'`;
+  -d '{"searchOptions":[{"counterId":"101"},{"counterId":"501"},{"counterId":"113"},{"counterId":"112"}]}'`;
 
 const TS_SAMPLE = `// Every request must carry the login cookies; tokens are per-scope and short-lived.
 const IDENTITY = "https://www-ec1.srv.ygles.com";

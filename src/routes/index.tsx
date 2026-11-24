@@ -50,7 +50,7 @@ const COLUMNS: { key: SortKey | null; label: string; align?: "right" }[] = [
   { key: null, label: "Type" },
   { key: "installDate", label: "Installed" },
   { key: "lastReceived", label: "Last comms" },
-  { key: "totalCounter", label: "Total (501)", align: "right" },
+  { key: "totalCounter", label: "Total (101)", align: "right" },
   { key: null, label: "B/W (113)", align: "right" },
   { key: null, label: "Colour (112)", align: "right" },
   { key: null, label: "Copy B/W (123)", align: "right" },

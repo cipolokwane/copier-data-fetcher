@@ -59,7 +59,7 @@ function buildHtml(devices: CanonDevice[], distributorName: string | null, fetch
     "Type",
     "Installed",
     "Last comms",
-    "Total (501)",
+    "Total (101)",
     "B/W (113)",
     "Colour (112)",
     "Copy B/W (123)",
@@ -107,7 +107,7 @@ ${esc(distributorName ?? "Canon eMaintenance")} · generated ${esc(new Date(fetc
 <table style="border-collapse:collapse;margin-bottom:20px;font-size:13px;">
 <tr><td style="padding:4px 16px 4px 0;color:#6b7280;">Devices</td><td style="padding:4px 0;font-weight:700;">${devices.length}</td></tr>
 <tr><td style="padding:4px 16px 4px 0;color:#6b7280;">Colour units</td><td style="padding:4px 0;font-weight:700;">${colourUnits}</td></tr>
-<tr><td style="padding:4px 16px 4px 0;color:#6b7280;">Total pages (counter 501)</td><td style="padding:4px 0;font-weight:700;">${totalPages.toLocaleString("en-ZA")}</td></tr>
+<tr><td style="padding:4px 16px 4px 0;color:#6b7280;">Total pages (counter 101)</td><td style="padding:4px 0;font-weight:700;">${totalPages.toLocaleString("en-ZA")}</td></tr>
 <tr><td style="padding:4px 16px 4px 0;color:#6b7280;">No comms in 7 days</td><td style="padding:4px 0;font-weight:700;">${stale}</td></tr>
 </table>
 <table style="border-collapse:collapse;width:100%;">
