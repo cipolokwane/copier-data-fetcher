@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Read historical meter snapshots from the hourly `data/meters.csv` GitHub commit history instead of duplicating the snapshots in another store, so past exports remain aligned with the published file.

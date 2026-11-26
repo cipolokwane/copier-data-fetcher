@@ -18,6 +18,7 @@ export type CanonDevice = {
   model: string;
   customerName: string;
   customerId: string;
+  location?: string | null;
   distributorName: string;
   deviceUniqueId: string;
   rdsVersion: string | null;

@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as ApiReferenceRouteImport } from './routes/api-reference'
+import { Route as HistoryRouteImport } from './routes/history'
 import { Route as SettingsRouteImport } from './routes/settings'
 import { Route as ApiPublicDailyReportRouteImport } from './routes/api/public/daily-report'
 import { Route as ApiPublicPublishMetersRouteImport } from './routes/api/public/publish-meters'
@@ -23,6 +24,11 @@ const IndexRoute = IndexRouteImport.update({
 const ApiReferenceRoute = ApiReferenceRouteImport.update({
   id: '/api-reference',
   path: '/api-reference',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const HistoryRoute = HistoryRouteImport.update({
+  id: '/history',
+  path: '/history',
   getParentRoute: () => rootRouteImport,
 } as any)
 const SettingsRoute = SettingsRouteImport.update({
@@ -44,6 +50,7 @@ const ApiPublicPublishMetersRoute = ApiPublicPublishMetersRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/api-reference': typeof ApiReferenceRoute
+  '/history': typeof HistoryRoute
   '/settings': typeof SettingsRoute
   '/api/public/daily-report': typeof ApiPublicDailyReportRoute
   '/api/public/publish-meters': typeof ApiPublicPublishMetersRoute
@@ -51,6 +58,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/api-reference': typeof ApiReferenceRoute
+  '/history': typeof HistoryRoute
   '/settings': typeof SettingsRoute
   '/api/public/daily-report': typeof ApiPublicDailyReportRoute
   '/api/public/publish-meters': typeof ApiPublicPublishMetersRoute
@@ -59,6 +67,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/api-reference': typeof ApiReferenceRoute
+  '/history': typeof HistoryRoute
   '/settings': typeof SettingsRoute
   '/api/public/daily-report': typeof ApiPublicDailyReportRoute
   '/api/public/publish-meters': typeof ApiPublicPublishMetersRoute
@@ -68,6 +77,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/api-reference'
+    | '/history'
     | '/settings'
     | '/api/public/daily-report'
     | '/api/public/publish-meters'
@@ -75,6 +85,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/api-reference'
+    | '/history'
     | '/settings'
     | '/api/public/daily-report'
     | '/api/public/publish-meters'
@@ -82,6 +93,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/api-reference'
+    | '/history'
     | '/settings'
     | '/api/public/daily-report'
     | '/api/public/publish-meters'
@@ -90,6 +102,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   ApiReferenceRoute: typeof ApiReferenceRoute
+  HistoryRoute: typeof HistoryRoute
   SettingsRoute: typeof SettingsRoute
   ApiPublicDailyReportRoute: typeof ApiPublicDailyReportRoute
   ApiPublicPublishMetersRoute: typeof ApiPublicPublishMetersRoute
@@ -109,6 +122,13 @@ declare module '@tanstack/react-router' {
       path: '/api-reference'
       fullPath: '/api-reference'
       preLoaderRoute: typeof ApiReferenceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/history': {
+      id: '/history'
+      path: '/history'
+      fullPath: '/history'
+      preLoaderRoute: typeof HistoryRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/settings': {
@@ -138,6 +158,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   ApiReferenceRoute: ApiReferenceRoute,
+  HistoryRoute: HistoryRoute,
   SettingsRoute: SettingsRoute,
   ApiPublicDailyReportRoute: ApiPublicDailyReportRoute,
   ApiPublicPublishMetersRoute: ApiPublicPublishMetersRoute,

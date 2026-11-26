@@ -70,3 +70,65 @@ export async function publishFile(path: string, content: string, message: string
   if (!res.ok) throw new Error(`GitHub write ${path} failed [${res.status}]: ${(await res.text()).slice(0, 300)}`);
   return `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/${path}`;
 }
+
+export type MeterFileCommit = {
+  sha: string;
+  date: string;
+  message: string;
+};
+
+export async function listMeterFileCommits(since: string, until: string) {
+  const m = mode();
+  const repoUrl = m.url.replace(/\/contents$/, "");
+  const commits: MeterFileCommit[] = [];
+  const maxPages = 20;
+  let page = 1;
+
+  while (page <= maxPages) {
+    const params = new URLSearchParams({
+      path: "data/meters.csv",
+      since,
+      until,
+      per_page: "100",
+      page: String(page),
+    });
+    const response = await fetch(`${repoUrl}/commits?${params.toString()}`, {
+      headers: m.headers,
+      cache: "no-store",
+    });
+    if (!response.ok) {
+      throw new Error(`GitHub snapshot history failed [${response.status}]: ${(await response.text()).slice(0, 300)}`);
+    }
+    const batch = (await response.json()) as {
+      sha?: string;
+      commit?: { author?: { date?: string }; committer?: { date?: string }; message?: string };
+    }[];
+    for (const item of batch) {
+      const sha = item.sha;
+      const date = item.commit?.committer?.date ?? item.commit?.author?.date;
+      if (sha && date) {
+        commits.push({ sha, date, message: item.commit?.message ?? "Meter snapshot" });
+      }
+    }
+    if (batch.length < 100) break;
+    page += 1;
+  }
+
+  return { commits, truncated: page > maxPages };
+}
+
+export async function readMeterFileAtCommit(sha: string): Promise<string> {
+  const m = mode();
+  const response = await fetch(`${m.url}/data/meters.csv?ref=${encodeURIComponent(sha)}`, {
+    headers: m.headers,
+    cache: "no-store",
+  });
+  if (!response.ok) {
+    throw new Error(`GitHub snapshot read failed [${response.status}]: ${(await response.text()).slice(0, 300)}`);
+  }
+  const file = (await response.json()) as { content?: string; encoding?: string };
+  if (!file.content || file.encoding !== "base64") throw new Error("GitHub returned an unreadable meter snapshot.");
+  const binary = atob(file.content.replace(/\s/g, ""));
+  const bytes = Uint8Array.from(binary, (character) => character.charCodeAt(0));
+  return new TextDecoder().decode(bytes);
+}

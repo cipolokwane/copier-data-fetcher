@@ -9,6 +9,13 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SiteNav } from "@/components/site-nav";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -67,21 +74,46 @@ function FleetPage() {
   });
 
   const [search, setSearch] = useState("");
+  const [modelFilter, setModelFilter] = useState("all");
+  const [locationFilter, setLocationFilter] = useState("all");
+  const [meterMin, setMeterMin] = useState("");
+  const [meterMax, setMeterMax] = useState("");
   const [sort, setSort] = useState<{ key: SortKey; dir: 1 | -1 }>({
     key: "customerName",
     dir: 1,
   });
 
+  const models = useMemo(
+    () => Array.from(new Set((data?.devices ?? []).map((device) => device.model))).sort(),
+    [data],
+  );
+  const locations = useMemo(
+    () =>
+      Array.from(
+        new Set((data?.devices ?? []).map((device) => device.location?.trim() ?? "").filter(Boolean)),
+      ).sort(),
+    [data],
+  );
+
   const devices = useMemo(() => {
     const rows: CanonDevice[] = data?.devices ?? [];
     const q = search.trim().toLowerCase();
-    const filtered = q
-      ? rows.filter((d) =>
-          [d.customerName, d.customerId, d.model, d.serialNo].some((v) =>
-            v.toLowerCase().includes(q),
-          ),
-        )
-      : rows;
+    const min = meterMin === "" ? null : Number(meterMin);
+    const max = meterMax === "" ? null : Number(meterMax);
+    const filtered = rows.filter((d) => {
+      const location = d.location?.trim() ?? "";
+      const matchesSearch =
+        !q ||
+        [d.customerName, d.customerId, d.model, d.serialNo, location, String(d.totalCounter ?? ""), ...Object.values(d.meters).map(String)]
+          .some((value) => value.toLowerCase().includes(q));
+      const matchesModel = modelFilter === "all" || d.model === modelFilter;
+      const matchesLocation =
+        locationFilter === "all" ||
+        (locationFilter === "__missing" ? !location : location === locationFilter);
+      const matchesMin = min === null || (d.totalCounter !== null && d.totalCounter >= min);
+      const matchesMax = max === null || (d.totalCounter !== null && d.totalCounter <= max);
+      return matchesSearch && matchesModel && matchesLocation && matchesMin && matchesMax;
+    });
     return [...filtered].sort((a, b) => {
       const av = a[sort.key];
       const bv = b[sort.key];
@@ -92,7 +124,7 @@ function FleetPage() {
       }
       return String(av ?? "").localeCompare(String(bv ?? "")) * sort.dir;
     });
-  }, [data, search, sort]);
+  }, [data, search, modelFilter, locationFilter, meterMin, meterMax, sort]);
 
   const exportCsv = () => {
     const header = COLUMNS.map((c) => c.label);
@@ -127,6 +159,17 @@ function FleetPage() {
     setSort((s) => ({ key, dir: s.key === key && s.dir === 1 ? -1 : 1 }));
   };
 
+  const clearFilters = () => {
+    setSearch("");
+    setModelFilter("all");
+    setLocationFilter("all");
+    setMeterMin("");
+    setMeterMax("");
+  };
+  const filtersActive = Boolean(
+    search || modelFilter !== "all" || locationFilter !== "all" || meterMin || meterMax,
+  );
+
   return (
     <main className="min-h-screen bg-background text-foreground">
       <div className="mx-auto max-w-[1600px] px-6 py-10">
@@ -150,12 +193,6 @@ function FleetPage() {
             </p>
           </div>
           <div className="flex flex-wrap items-center gap-3">
-            <Input
-              value={search}
-              onChange={(e) => setSearch(e.target.value)}
-              placeholder="Search customer, model or serial"
-              className="w-72"
-            />
             <Button variant="outline" onClick={() => refetch()} disabled={isFetching}>
               {isFetching ? "Refreshing…" : "Refresh"}
             </Button>
@@ -164,6 +201,78 @@ function FleetPage() {
             </Button>
           </div>
         </header>
+
+        <section className="mb-6 border-b border-border pb-5" aria-label="Copier filters">
+          <div className="mb-3 flex justify-end">
+            <Button variant="ghost" size="sm" onClick={clearFilters} disabled={!filtersActive}>
+              Clear filters
+            </Button>
+          </div>
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 xl:grid-cols-6">
+            <label className="space-y-1 xl:col-span-2">
+              <span className="text-xs font-medium text-muted-foreground">Search</span>
+              <Input
+                value={search}
+                onChange={(e) => setSearch(e.target.value)}
+                placeholder="Customer, model, serial, location, or meter"
+              />
+            </label>
+            <label className="space-y-1">
+              <span className="text-xs font-medium text-muted-foreground">Model</span>
+              <Select value={modelFilter} onValueChange={setModelFilter}>
+                <SelectTrigger aria-label="Filter by model">
+                  <SelectValue placeholder="All models" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All models</SelectItem>
+                  {models.map((model) => (
+                    <SelectItem key={model} value={model}>{model}</SelectItem>
+                  ))}
+                </SelectContent>
+              </Select>
+            </label>
+            <label className="space-y-1">
+              <span className="text-xs font-medium text-muted-foreground">Location</span>
+              <Select value={locationFilter} onValueChange={setLocationFilter}>
+                <SelectTrigger aria-label="Filter by location">
+                  <SelectValue placeholder="All locations" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="all">All locations</SelectItem>
+                  {locations.map((location) => (
+                    <SelectItem key={location} value={location}>{location}</SelectItem>
+                  ))}
+                  {(data?.devices ?? []).some((device) => !device.location?.trim()) ? (
+                    <SelectItem value="__missing">Not provided</SelectItem>
+                  ) : null}
+                </SelectContent>
+              </Select>
+            </label>
+            <fieldset className="space-y-1 xl:col-span-2">
+              <legend className="text-xs font-medium text-muted-foreground">Total meter range</legend>
+              <div className="flex gap-2">
+                <Input
+                  type="number"
+                  min="0"
+                  step="1"
+                  value={meterMin}
+                  onChange={(e) => setMeterMin(e.target.value)}
+                  placeholder="Minimum"
+                  aria-label="Minimum total meter"
+                />
+                <Input
+                  type="number"
+                  min="0"
+                  step="1"
+                  value={meterMax}
+                  onChange={(e) => setMeterMax(e.target.value)}
+                  placeholder="Maximum"
+                  aria-label="Maximum total meter"
+                />
+              </div>
+            </fieldset>
+          </div>
+        </section>
 
         {data && !data.ok ? (
           <div className="rounded-lg border border-destructive/40 bg-destructive/10 p-4 text-sm text-destructive">
@@ -225,7 +334,7 @@ function FleetPage() {
                 {!devices.length ? (
                   <tr>
                     <td colSpan={COLUMNS.length} className="px-3 py-10 text-center text-muted-foreground">
-                      No devices match your search.
+                      No devices match these filters.
                     </td>
                   </tr>
                 ) : null}
