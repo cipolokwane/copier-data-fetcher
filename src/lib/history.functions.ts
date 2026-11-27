@@ -35,3 +35,19 @@ export const getMeterSnapshot = createServerFn({ method: "GET" })
       };
     }
   });
+
+export const getMeterHistoryCsv = createServerFn({ method: "POST" })
+  .inputValidator((input: { from: string; to: string }) => input)
+  .handler(async ({ data }) => {
+    try {
+      const { exportMeterHistory } = await import("./history.server");
+      const result = await exportMeterHistory(data.from, data.to);
+      return { ok: true as const, ...result };
+    } catch (error) {
+      console.error("Meter history export failed:", error);
+      return {
+        ok: false as const,
+        error: error instanceof Error ? error.message : "Could not prepare the historical CSV.",
+      };
+    }
+  });

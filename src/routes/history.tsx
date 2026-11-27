@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Skeleton } from "@/components/ui/skeleton";
 import { SiteNav } from "@/components/site-nav";
-import { getMeterHistory, getMeterSnapshot } from "@/lib/history.functions";
+import { getMeterHistory, getMeterHistoryCsv, getMeterSnapshot } from "@/lib/history.functions";
 
 export const Route = createFileRoute("/history")({
   head: () => ({
@@ -47,14 +47,37 @@ const formatSnapshotDate = (date: string) =>
 
 const number = (value: number) => value.toLocaleString("en-ZA");
 
+function downloadCsv(csv: string, filename: string) {
+  const url = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
+  const anchor = document.createElement("a");
+  anchor.href = url;
+  anchor.download = filename;
+  document.body.appendChild(anchor);
+  anchor.click();
+  anchor.remove();
+  window.setTimeout(() => URL.revokeObjectURL(url), 30_000);
+}
+
+type PreparedRangeExport = {
+  csv: string;
+  snapshotCount: number;
+  deviceRowCount: number;
+  from: string;
+  to: string;
+};
+
 function HistoryPage() {
   const loadHistory = useServerFn(getMeterHistory);
   const loadSnapshot = useServerFn(getMeterSnapshot);
+  const loadHistoryCsv = useServerFn(getMeterHistoryCsv);
   const [range, setRange] = useState<DateRange>(initialRange);
   const [from, setFrom] = useState(range.from);
   const [to, setTo] = useState(range.to);
   const [selectedSha, setSelectedSha] = useState("");
   const [rangeError, setRangeError] = useState("");
+  const [preparedExport, setPreparedExport] = useState<PreparedRangeExport | null>(null);
+  const [exportError, setExportError] = useState("");
+  const [isPreparingExport, setIsPreparingExport] = useState(false);
 
   const historyQuery = useQuery({
     queryKey: ["meter-history", range.from, range.to],
@@ -86,18 +109,38 @@ function HistoryPage() {
     }
     setRangeError("");
     setSelectedSha("");
+    setPreparedExport(null);
+    setExportError("");
     setRange({ from, to });
+  };
+
+  const prepareRangeExport = async () => {
+    setIsPreparingExport(true);
+    setExportError("");
+    setPreparedExport(null);
+    try {
+      const result = await loadHistoryCsv({ data: range });
+      if (!result.ok) {
+        setExportError(result.error);
+        return;
+      }
+      setPreparedExport({ ...result, from: range.from, to: range.to });
+    } catch {
+      setExportError("Could not prepare the historical CSV. Please try a smaller date range.");
+    } finally {
+      setIsPreparingExport(false);
+    }
   };
 
   const exportSnapshot = () => {
     const csv = selectedSnapshot?.csv;
     if (!csv || !selectedCommit) return;
-    const url = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));
-    const anchor = document.createElement("a");
-    anchor.href = url;
-    anchor.download = `canon-meter-snapshot-${selectedCommit.date.slice(0, 10)}-${selectedCommit.sha.slice(0, 7)}.csv`;
-    anchor.click();
-    URL.revokeObjectURL(url);
+    downloadCsv(csv, `canon-meter-snapshot-${selectedCommit.date.slice(0, 10)}-${selectedCommit.sha.slice(0, 7)}.csv`);
+  };
+
+  const downloadRangeExport = () => {
+    if (!preparedExport) return;
+    downloadCsv(preparedExport.csv, `canon-meter-history-${preparedExport.from}-to-${preparedExport.to}.csv`);
   };
 
   return (
@@ -146,10 +189,33 @@ function HistoryPage() {
           <>
             <div className="mb-3 flex flex-wrap items-center justify-between gap-3">
               <h2 className="text-lg font-semibold">Snapshots ({snapshots.length})</h2>
+              <div className="flex flex-wrap items-center gap-2">
+                {preparedExport?.from === range.from && preparedExport.to === range.to ? (
+                  <Button variant="outline" onClick={downloadRangeExport}>
+                    <Download aria-hidden="true" />
+                    Download date-range CSV
+                  </Button>
+                ) : (
+                  <Button
+                    variant="outline"
+                    onClick={prepareRangeExport}
+                    disabled={!snapshots.length || historyQuery.isFetching || Boolean(historyQuery.data?.truncated) || isPreparingExport}
+                  >
+                    <FileText aria-hidden="true" />
+                    {isPreparingExport ? "Preparing CSV…" : "Prepare date-range CSV"}
+                  </Button>
+                )}
+              </div>
               {historyQuery.data?.truncated ? (
                 <p className="text-sm text-muted-foreground">Showing the newest 2,000 snapshots; narrow the date range to see fewer.</p>
               ) : null}
             </div>
+            {preparedExport?.from === range.from && preparedExport.to === range.to ? (
+              <p className="mb-3 text-sm text-muted-foreground" role="status">
+                CSV ready · {number(preparedExport.snapshotCount)} snapshots · {number(preparedExport.deviceRowCount)} device readings
+              </p>
+            ) : null}
+            {exportError ? <p className="mb-3 text-sm text-destructive" role="alert">{exportError}</p> : null}
             <div className="max-h-[430px] overflow-auto rounded-md border border-border">
               <table className="w-full border-collapse text-sm">
                 <thead className="sticky top-0 bg-muted/90 backdrop-blur">
